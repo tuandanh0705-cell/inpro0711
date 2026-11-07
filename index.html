@@ -3805,10 +3805,11 @@ body{
   z-index:48;
   display:flex;
   align-items:center;
-  gap:12px;
-  max-width:340px;
-  padding:11px 14px;
-  border-radius:16px;
+  gap:10px;
+  width:max-content;
+  max-width:260px;
+  padding:10px 13px;
+  border-radius:15px;
   background:rgba(255,255,255,.97);
   border:1.5px solid #d8b4fe;
   box-shadow:0 16px 38px rgba(24,35,61,.18);
@@ -5057,8 +5058,20 @@ nav{
 .x100-scroll-track{
   min-height:146vh;
 }
+.ba-stage-device{
+  max-width:480px;
+  transform:none !important;
+}
+.ba-slide:hover .ba-stage-device{
+  transform:translateY(-4px) !important;
+}
 
 @media(max-width:1080px){
+  .ba-stage-device,
+  .ba-slide:hover .ba-stage-device{
+    transform:none !important;
+    max-width:100% !important;
+  }
   .trial-banner-card{
     grid-template-columns:1fr;
     padding:28px 24px;
@@ -5397,6 +5410,46 @@ nav{
   }
 
   /* 5. Leadership (#leadership) & Brand Cases (#brandCases) Mobile-First */
+  .b-device-3d,
+  .b-device-3d.is-tilt-right,
+  .b-sol-stage:hover .b-device-3d,
+  .b-sol-stage:hover .b-device-3d.is-tilt-right,
+  .x100-device-3d,
+  .x100-stage-wrap:hover .x100-device-3d{
+    transform:none !important;
+  }
+  .ba-slide-stage{
+    min-height:auto !important;
+    padding:0 0 6px !important;
+    order:1 !important;
+    width:100% !important;
+  }
+  .ba-stage-device,
+  .ba-slide:hover .ba-stage-device{
+    transform:none !important;
+    max-width:100% !important;
+    padding:6px !important;
+    border-radius:16px !important;
+    box-shadow:0 10px 24px rgba(24,35,61,.1) !important;
+  }
+  .ba-stage-screen{
+    padding:0 !important;
+    border:none !important;
+    border-radius:12px !important;
+  }
+  .ba-stage-shot{
+    aspect-ratio:1902 / 917 !important;
+    height:auto !important;
+    border-radius:12px !important;
+    overflow:hidden !important;
+  }
+  .ba-stage-shot img{
+    width:100% !important;
+    height:auto !important;
+    object-fit:cover !important;
+    object-position:top left !important;
+    display:block !important;
+  }
   .leaders-grid{
     grid-template-columns:repeat(2,1fr) !important;
     gap:10px !important;
@@ -5573,13 +5626,13 @@ nav{
         <a href="#trial-faq" onclick="closeMenu()">Dùng thử 30 ngày &amp; FAQ</a>
       </div>
       <div class="menu-mobile-actions">
-        <a href="#register" class="btn btn-p" onclick="closeMenu()">Đăng ký dùng thử miễn phí 30 ngày</a>
+        <a href="#register" class="btn btn-p" onclick="closeMenu()">Miễn phí dùng thử tháng 11</a>
         <a href="tel:0925376699" class="btn btn-o"><svg class="ico"><use href="#i-phone"/></svg> Hotline 0925 376 699</a>
         <a href="https://www.facebook.com/profile.php?id=61595587119025" data-fanpage-link target="_blank" rel="noopener" class="btn btn-zalo">Nhắn tin Fanpage tư vấn</a>
       </div>
     </div>
     <div class="nav-r">
-      <a href="#register" class="btn btn-p nav-cta-desktop">Đăng ký dùng thử 30 ngày</a>
+      <a href="#register" class="btn btn-p nav-cta-desktop">Miễn phí dùng thử tháng 11</a>
       <button class="burger" id="burgerBtn" type="button" onclick="toggleMenu()" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
       </button>
@@ -5664,13 +5717,13 @@ nav{
         <p class="lead">INPRO.vn là công cụ tự động hóa việc vận hành và tối ưu các nguồn lực, góp phần nâng cao năng lực quản trị, giúp doanh nghiệp gia tăng lợi nhuận.</p>
 
         <div class="cta">
-          <a href="#register" data-flow="trial" class="btn btn-w hero-btn-demo">Đăng ký dùng thử miễn phí 30 ngày →</a>
+          <a href="#register" data-flow="trial" class="btn btn-w hero-btn-demo">Miễn phí dùng thử tháng 11 →</a>
           <a href="#register" data-flow="consult" class="btn btn-t hero-btn-price">Liên hệ tư vấn</a>
         </div>
 
         <div class="hero-cond-note">
           <div class="hero-cond-top">
-            <strong>Điều kiện dùng thử miễn phí 30 ngày:</strong>
+            <strong>Điều kiện dùng thử miễn phí 30 ngày (chỉ cần đáp ứng 1 trong 2 điều kiện):</strong>
             <span class="hero-cond-badge"><i aria-hidden="true"></i> Giới hạn trong 20 ngày kể từ hôm nay</span>
           </div>
           <div class="hero-cond-lines">
@@ -6018,7 +6071,7 @@ nav{
         <div class="vplayer" id="vplayer"></div>
       </div>
     </div>
-    <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Đăng ký dùng thử miễn phí 30 ngày →</a>
+    <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Miễn phí dùng thử tháng 11 →</a>
   </div>
 </section>
 
@@ -6178,7 +6231,7 @@ nav{
             </li>
           </ul>
           <div class="b-sol-actions">
-            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Đăng ký dùng thử miễn phí 30 ngày →</a>
+            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Miễn phí dùng thử tháng 11 →</a>
           </div>
         </div>
       </div>
@@ -6217,7 +6270,7 @@ nav{
             </li>
           </ul>
           <div class="b-sol-actions">
-            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Đăng ký dùng thử miễn phí 30 ngày →</a>
+            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Miễn phí dùng thử tháng 11 →</a>
           </div>
         </div>
 
@@ -6348,7 +6401,7 @@ nav{
             </li>
           </ul>
           <div class="b-sol-actions">
-            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Đăng ký dùng thử miễn phí 30 ngày →</a>
+            <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Miễn phí dùng thử tháng 11 →</a>
             <a href="#x100-ops" class="btn btn-o b-pill-btn">Xem kiểm soát lợi nhuận</a>
           </div>
         </div>
@@ -6411,7 +6464,7 @@ nav{
 
           <div>
             <div class="eco-vault-actions">
-              <a href="#register" data-flow="trial" class="btn btn-w">Đăng ký dùng thử miễn phí 30 ngày →</a>
+              <a href="#register" data-flow="trial" class="btn btn-w">Miễn phí dùng thử tháng 11 →</a>
               <a href="#register" data-flow="consult" class="btn btn-t">Liên hệ tư vấn</a>
             </div>
 
@@ -7349,7 +7402,7 @@ nav{
           <span>Với các trường hợp chưa đáp ứng điều kiện trên, vui lòng liên hệ riêng để được tư vấn.</span>
         </div>
         <div class="trial-banner-actions">
-          <a href="#register" data-flow="trial" class="btn btn-w">Đăng ký dùng thử miễn phí 30 ngày</a>
+          <a href="#register" data-flow="trial" class="btn btn-w">Miễn phí dùng thử tháng 11</a>
           <a href="#register" data-flow="consult" class="btn btn-t">Liên hệ tư vấn</a>
         </div>
       </div>
@@ -7619,7 +7672,7 @@ nav{
 
           <input type="hidden" name="submit_mode" id="f-submit-mode" value="trial">
           <div class="rf-btn-group">
-            <button class="rf-submit" type="submit" id="btnSubmitTrial" onclick="document.getElementById('f-submit-mode').value='trial'">Đăng ký dùng thử miễn phí 30 ngày</button>
+            <button class="rf-submit" type="submit" id="btnSubmitTrial" onclick="document.getElementById('f-submit-mode').value='trial'">Miễn phí dùng thử tháng 11</button>
             <button class="rf-btn-consult" type="submit" id="btnSubmitConsult" onclick="document.getElementById('f-submit-mode').value='consult'">Liên hệ tư vấn</button>
           </div>
         </div>
@@ -7657,9 +7710,9 @@ nav{
 <div class="reg-toast" id="regToast" role="status" aria-live="polite">
   <div class="reg-toast-avatar" id="regToastAvatar">MN</div>
   <div class="reg-toast-body">
-    <strong class="reg-toast-title" id="regToastTitle">Anh Minh · Shop Mỹ phẩm (Hà Nội)</strong>
-    <span class="reg-toast-desc" id="regToastDesc">Vừa đăng ký dùng thử miễn phí 30 ngày</span>
-    <span class="reg-toast-time"><i aria-hidden="true"></i> <span id="regToastTime">2 phút trước</span></span>
+    <strong class="reg-toast-title" id="regToastTitle">Anh Minh - Hà Nội</strong>
+    <span class="reg-toast-desc" id="regToastDesc">Vừa đăng kí tham gia</span>
+    <span class="reg-toast-time"><i aria-hidden="true"></i> <span id="regToastTime">Vừa xong</span></span>
   </div>
   <button type="button" class="reg-toast-close" onclick="dismissRegToast()" aria-label="Đóng thông báo">✕</button>
 </div>
@@ -7700,7 +7753,7 @@ nav{
     <span>Fanpage</span>
   </a>
   <a href="#register" class="mbar-btn mbar-cta">
-    <span>Dùng thử 30 ngày</span>
+    <span>Miễn phí dùng thử tháng 11</span>
     <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
 </div>
@@ -7731,7 +7784,7 @@ nav{
         <a class="flink" href="#why">Đội ngũ lãnh đạo &amp; Câu chuyện</a>
         <a class="flink" href="#brandCases">Thực tiễn 5 thương hiệu</a>
         <a class="flink" href="#demo">Video vận hành thực tế</a>
-        <a class="flink" href="#register">Đăng ký dùng thử miễn phí 30 ngày</a>
+        <a class="flink" href="#register">Miễn phí dùng thử tháng 11</a>
       </div>
     </div>
     <div class="copy">© 2026 INPRO.vn: Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận. All rights reserved.</div>
@@ -7936,28 +7989,28 @@ document.querySelectorAll('[data-fanpage-link]').forEach(el => {
 // =========================================================================
 const ENABLE_REG_TOAST = true;
 const REG_TOAST_DATA = [
-  { avatar: 'MN', title: 'Anh Minh · Shop Mỹ phẩm (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: 'Vừa xong' },
-  { avatar: 'LH', title: 'Chị Lan Hương · Thời trang (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: 'Vừa xong' },
-  { avatar: 'HQ', title: 'Anh Hoàng Quân · Gia dụng (Đà Nẵng)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '1 phút trước' },
-  { avatar: 'TT', title: 'Chị Thanh Thảo · Mẹ & Bé (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '1 phút trước' },
-  { avatar: 'ĐK', title: 'Anh Đức Khôi · Phụ kiện (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '2 phút trước' },
-  { avatar: 'NP', title: 'Chị Ngọc Phương · Chăm sóc da (Hải Phòng)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '2 phút trước' },
-  { avatar: 'TA', title: 'Anh Tuấn Anh · Nam trang (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '3 phút trước' },
-  { avatar: 'ML', title: 'Chị Mỹ Linh · Mỹ phẩm thiên nhiên (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '3 phút trước' },
-  { avatar: 'VH', title: 'Anh Việt Hoàng · Đồ thể thao (Bắc Ninh)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '4 phút trước' },
-  { avatar: 'KL', title: 'Chị Khánh Ly · Nước hoa & Làm đẹp (Hà Nội)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '4 phút trước' },
-  { avatar: 'QT', title: 'Anh Quốc Trung · Chăm sóc cá nhân (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '5 phút trước' },
-  { avatar: 'HT', title: 'Chị Huyền Trang · Thời trang thiết kế (Đà Nẵng)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '5 phút trước' },
-  { avatar: 'ĐN', title: 'Anh Đình Nam · Thực phẩm sức khỏe (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '6 phút trước' },
-  { avatar: 'BA', title: 'Chị Bảo Ngọc · Chăm sóc tóc (Cần Thơ)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '6 phút trước' },
-  { avatar: 'MP', title: 'Anh Minh Phúc · Gia dụng thông minh (Bình Dương)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '7 phút trước' },
-  { avatar: 'TN', title: 'Chị Tuyết Nhung · Mỹ phẩm Hàn Quốc (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '8 phút trước' },
-  { avatar: 'GH', title: 'Anh Gia Huy · Giày dép & Túi xách (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '8 phút trước' },
-  { avatar: 'DL', title: 'Chị Diệu Linh · Đồ dùng Mẹ & Bé (Nghệ An)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '9 phút trước' },
-  { avatar: 'TH', title: 'Anh Trọng Hiếu · Chăm sóc nam giới (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '10 phút trước' },
-  { avatar: 'KN', title: 'Chị Kim Ngân · Thời trang nữ (Đồng Nai)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '11 phút trước' },
-  { avatar: 'ĐL', title: 'Anh Đăng Long · Phụ kiện công nghệ (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '12 phút trước' },
-  { avatar: 'HM', title: 'Chị Hà My · Mỹ phẩm & Skincare (Khánh Hòa)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '14 phút trước' }
+  { avatar: 'MN', title: 'Anh Minh - Hà Nội', desc: 'Vừa đăng kí tham gia', time: 'Vừa xong' },
+  { avatar: 'LH', title: 'Chị Lan Hương - TP.HCM', desc: 'Vừa đăng kí tham gia', time: 'Vừa xong' },
+  { avatar: 'HQ', title: 'Anh Hoàng Quân - Đà Nẵng', desc: 'Vừa đăng kí tham gia', time: '1 phút trước' },
+  { avatar: 'TT', title: 'Chị Thanh Thảo - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '1 phút trước' },
+  { avatar: 'ĐK', title: 'Anh Đức Khôi - TP.HCM', desc: 'Vừa đăng kí tham gia', time: '2 phút trước' },
+  { avatar: 'NP', title: 'Chị Ngọc Phương - Hải Phòng', desc: 'Vừa đăng kí tham gia', time: '2 phút trước' },
+  { avatar: 'TA', title: 'Anh Tuấn Anh - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '3 phút trước' },
+  { avatar: 'ML', title: 'Chị Mỹ Linh - TP.HCM', desc: 'Vừa đăng kí tham gia', time: '3 phút trước' },
+  { avatar: 'VH', title: 'Anh Việt Hoàng - Bắc Ninh', desc: 'Vừa đăng kí tham gia', time: '4 phút trước' },
+  { avatar: 'KL', title: 'Chị Khánh Ly - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '4 phút trước' },
+  { avatar: 'QT', title: 'Anh Quốc Trung - TP.HCM', desc: 'Vừa đăng kí tham gia', time: '5 phút trước' },
+  { avatar: 'HT', title: 'Chị Huyền Trang - Đà Nẵng', desc: 'Vừa đăng kí tham gia', time: '5 phút trước' },
+  { avatar: 'ĐN', title: 'Anh Đình Nam - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '6 phút trước' },
+  { avatar: 'BN', title: 'Chị Bảo Ngọc - Cần Thơ', desc: 'Vừa đăng kí tham gia', time: '6 phút trước' },
+  { avatar: 'MP', title: 'Anh Minh Phúc - Bình Dương', desc: 'Vừa đăng kí tham gia', time: '7 phút trước' },
+  { avatar: 'TN', title: 'Chị Tuyết Nhung - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '8 phút trước' },
+  { avatar: 'GH', title: 'Anh Gia Huy - TP.HCM', desc: 'Vừa đăng kí tham gia', time: '8 phút trước' },
+  { avatar: 'DL', title: 'Chị Diệu Linh - Nghệ An', desc: 'Vừa đăng kí tham gia', time: '9 phút trước' },
+  { avatar: 'TH', title: 'Anh Trọng Hiếu - Hà Nội', desc: 'Vừa đăng kí tham gia', time: '10 phút trước' },
+  { avatar: 'KN', title: 'Chị Kim Ngân - Đồng Nai', desc: 'Vừa đăng kí tham gia', time: '11 phút trước' },
+  { avatar: 'ĐL', title: 'Anh Đăng Long - TP.HCM', desc: 'Vừa đăng kí tham gia', time: '12 phút trước' },
+  { avatar: 'HM', title: 'Chị Hà My - Khánh Hòa', desc: 'Vừa đăng kí tham gia', time: '14 phút trước' }
 ];
 let regToastDismissed = false;
 let regToastIdx = 0;
@@ -8185,7 +8238,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
     if(msgEl) msgEl.textContent = statusMsgTxt;
     if(fl) fl.style.display = 'none';
     if(ok) ok.style.display = 'block';
-    if(btnTrial){ btnTrial.disabled = false; btnTrial.textContent = 'Đăng ký dùng thử miễn phí 30 ngày'; }
+    if(btnTrial){ btnTrial.disabled = false; btnTrial.textContent = 'Miễn phí dùng thử tháng 11'; }
     if(btnConsult){ btnConsult.disabled = false; btnConsult.textContent = 'Liên hệ tư vấn'; }
   };
 
@@ -8207,7 +8260,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
   })
     .then(done)
     .catch(() => {
-      if(btnTrial){ btnTrial.disabled = false; btnTrial.textContent = 'Đăng ký dùng thử miễn phí 30 ngày'; }
+      if(btnTrial){ btnTrial.disabled = false; btnTrial.textContent = 'Miễn phí dùng thử tháng 11'; }
       if(btnConsult){ btnConsult.disabled = false; btnConsult.textContent = 'Liên hệ tư vấn'; }
       showError('Kết nối mạng gián đoạn. Vui lòng thử lại hoặc nhắn tin Fanpage / gọi Hotline 0925 376 699.');
     });
