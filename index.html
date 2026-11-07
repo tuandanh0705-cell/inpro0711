@@ -2,9 +2,9 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>INPRO.vn – Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận | Dùng thử miễn phí 30 ngày</title>
-<meta name="description" content="INPRO.vn là công cụ tự động hóa việc vận hành và tối ưu các nguồn lực, đưa AI vào Booking KOC, Ads và CSKH để kiểm soát chi phí và gia tăng lợi nhuận. Đăng ký dùng thử miễn phí 30 ngày.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<title>INPRO.vn | Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận | Dùng thử miễn phí 30 ngày</title>
+<meta name="description" content="INPRO.vn là công cụ tự động hóa việc vận hành và tối ưu các nguồn lực, đưa AI vào Booking KOL/KOC, Quảng cáo và Chăm sóc khách hàng để kiểm soát chi phí và gia tăng lợi nhuận. Đăng ký dùng thử miễn phí 30 ngày.">
 <meta name="referrer" content="origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3670,20 +3670,229 @@ body{
    ============================================================ */
 .hero-cond-note{
   margin:0;
-  padding:12px 16px;
-  border-radius:14px;
-  background:rgba(255,255,255,.1);
-  border:1px solid rgba(233,213,255,.32);
-  color:rgba(255,255,255,.95);
+  padding:14px 16px;
+  border-radius:16px;
+  background:rgba(255,255,255,.11);
+  border:1.5px solid rgba(233,213,255,.36);
+  color:rgba(255,255,255,.96);
   font-size:13.5px;
   line-height:1.55;
-  max-width:510px;
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
+  max-width:520px;
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
 }
 .hero-cond-note strong{
   color:#f3e8ff;
   font-weight:800;
+}
+.hero-cond-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.hero-cond-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#fde047 0%,#f59e0b 100%);
+  color:#1e1b4b;
+  font-family:var(--font-brand);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.01em;
+  box-shadow:0 4px 14px rgba(245,158,11,.35);
+}
+.hero-cond-badge i{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#b45309;
+}
+.hero-cond-intro{
+  margin:0;
+  font-size:13px;
+  color:rgba(255,255,255,.92);
+}
+.hero-cond-lines{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  padding:8px 12px;
+  border-radius:11px;
+  background:rgba(15,23,42,.34);
+  border:1px solid rgba(233,213,255,.22);
+}
+.hero-cond-line{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13.5px;
+  font-weight:600;
+  color:#fff;
+}
+.hero-cond-dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#c084fc;
+  box-shadow:0 0 0 3px rgba(192,132,252,.22);
+  flex:none;
+}
+.hero-cond-desc,.hero-cond-sub{
+  margin:0;
+  font-size:12.5px;
+  line-height:1.5;
+  color:rgba(255,255,255,.9);
+}
+.hero-cond-sub{
+  padding-top:6px;
+  border-top:1px dashed rgba(233,213,255,.25);
+  color:#e9d5ff;
+  font-weight:600;
+}
+.trial-limit-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:5px 13px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#fef08a 0%,#f59e0b 100%);
+  color:#1e1b4b;
+  font-family:var(--font-brand);
+  font-size:11.5px;
+  font-weight:900;
+  margin-bottom:10px;
+  box-shadow:0 6px 18px rgba(245,158,11,.28);
+}
+.trial-limit-pill i{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#92400e;
+}
+.reg-limit-banner{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:5px 12px;
+  border-radius:999px;
+  background:#fef3c7;
+  border:1px solid #f59e0b;
+  color:#92400e;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:8px;
+}
+.reg-limit-banner i{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#d97706;
+}
+
+/* Social Proof Registration Toast (Góc trái bên dưới màn hình) */
+.reg-toast{
+  position:fixed;
+  left:20px;
+  bottom:24px;
+  z-index:48;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  max-width:340px;
+  padding:11px 14px;
+  border-radius:16px;
+  background:rgba(255,255,255,.97);
+  border:1.5px solid #d8b4fe;
+  box-shadow:0 16px 38px rgba(24,35,61,.18);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  opacity:0;
+  transform:translateY(22px) scale(.97);
+  pointer-events:none;
+  transition:opacity .36s cubic-bezier(.22,1,.36,1),transform .36s cubic-bezier(.22,1,.36,1);
+}
+.reg-toast.is-visible{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  pointer-events:auto;
+}
+.reg-toast-avatar{
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#6b21a8 0%,#9333ea 100%);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-family:var(--font-brand);
+  font-size:13px;
+  font-weight:900;
+  flex:none;
+  box-shadow:0 6px 14px rgba(107,33,168,.25);
+}
+.reg-toast-body{
+  flex:1;
+  min-width:0;
+}
+.reg-toast-title{
+  display:block;
+  font-size:12.5px;
+  font-weight:800;
+  color:var(--navy);
+  line-height:1.3;
+}
+.reg-toast-desc{
+  display:block;
+  font-size:11.5px;
+  color:var(--c1-h);
+  font-weight:700;
+  line-height:1.35;
+  margin-top:2px;
+}
+.reg-toast-time{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:10.5px;
+  color:var(--mut);
+  font-weight:600;
+  margin-top:2px;
+}
+.reg-toast-time i{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#22c55e;
+}
+.reg-toast-close{
+  border:0;
+  background:transparent;
+  color:var(--mut);
+  font-size:14px;
+  line-height:1;
+  padding:4px;
+  cursor:pointer;
+  align-self:flex-start;
+}
+.reg-toast-close:hover{
+  color:var(--navy);
+}
+@media(max-width:768px){
+  .reg-toast{
+    left:12px;
+    right:12px;
+    bottom:calc(var(--bottom-bar-height, 68px) + env(safe-area-inset-bottom, 0px) + 10px);
+    max-width:310px;
+    padding:9px 12px;
+  }
 }
 .hero-left .hero-slogan-box{
   margin:0 0 18px;
@@ -3894,12 +4103,23 @@ body{
   align-items:center;
   justify-content:space-between;
   gap:8px;
-  font-size:11.5px;
+  font-size:12px;
   font-weight:800;
-  letter-spacing:.05em;
-  text-transform:uppercase;
+  letter-spacing:.03em;
   color:#d8b4fe;
   margin-bottom:12px;
+  flex-wrap:wrap;
+}
+.eco-formula-label span:first-child{
+  text-transform:uppercase;
+}
+.eco-formula-label span:last-child{
+  color:#ffffff;
+  background:rgba(255,255,255,.12);
+  padding:3px 10px;
+  border-radius:999px;
+  font-weight:800;
+  letter-spacing:.01em;
 }
 .eco-formula-grid{
   display:grid;
@@ -4156,6 +4376,11 @@ body{
   .eco-proof-stage{
     grid-template-columns:1fr;
   }
+}
+@media(max-width:560px){
+  .eco-vault-card{
+    padding:22px 16px;
+  }
   .eco-formula-grid{
     grid-template-columns:repeat(2,1fr);
     gap:10px;
@@ -4164,22 +4389,81 @@ body{
     display:none;
   }
 }
-@media(max-width:560px){
-  .eco-vault-card{
-    padding:22px 16px;
-  }
+
+/* Video Demo Band at Top (Right after Hero, before Pain Section) */
+#demo.band{
+  background:linear-gradient(180deg,#faf5ff 0%,#ffffff 100%) !important;
+  color:var(--ink) !important;
+  padding:48px 24px 36px !important;
+  border-bottom:1px solid var(--tint-border);
+}
+#demo.band .section-tag{
+  background:var(--tint) !important;
+  border:1.5px solid var(--tint-border) !important;
+  color:var(--c1-h) !important;
+  font-weight:800 !important;
+}
+#demo.band h2{
+  color:var(--navy) !important;
+  font-size:clamp(24px,3vw,36px) !important;
+  font-weight:900 !important;
+  margin-bottom:8px;
+}
+#demo.band p{
+  color:var(--mut) !important;
+  max-width:720px;
+  margin:8px auto 22px !important;
+  font-size:16px;
+}
+#demo.band .vframe{
+  box-shadow:0 24px 56px rgba(24,35,61,.18), 0 0 0 1px rgba(147,51,234,.18) !important;
 }
 
-/* Leader card bio description */
+/* Leader card: Role & Name centered, Titles & Bio below divider flush-left */
+.leader-card{
+  align-items:stretch !important;
+}
+.leader-info{
+  width:100% !important;
+  align-items:center !important;
+  text-align:center !important;
+}
+.leader-role{
+  align-self:center !important;
+  text-align:center !important;
+}
+.leader-info h4{
+  width:100%;
+  text-align:center !important;
+}
+.leader-titles{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:4px;
+  margin-top:8px;
+  padding-top:8px;
+  border-top:1px solid var(--line);
+  text-align:left;
+}
+.leader-titles strong{
+  display:block;
+  width:100%;
+  font-size:13.5px;
+  font-weight:800;
+  color:var(--navy);
+  line-height:1.4;
+  text-align:left;
+}
 .leader-info p.leader-bio{
+  width:100%;
   font-size:13.5px;
   font-weight:500;
   color:var(--mut);
   line-height:1.55;
   margin-top:6px;
   text-align:left;
-  padding-top:8px;
-  border-top:1px solid var(--line);
 }
 
 /* SECTION: CHƯƠNG TRÌNH DÙNG THỬ 30 NGÀY & FAQ (#trial-faq) */
@@ -4191,14 +4475,15 @@ body{
 .trial-banner-card{
   background:linear-gradient(135deg,#18233d 0%,#3b0764 52%,#6b21a8 100%);
   border-radius:28px;
-  padding:38px 42px;
+  padding:36px 40px;
   color:var(--white);
   box-shadow:0 24px 56px rgba(24,35,61,.22);
   display:grid;
-  grid-template-columns:1.25fr .75fr;
-  gap:32px;
-  align-items:center;
-  margin-bottom:44px;
+  grid-template-columns:1fr;
+  gap:20px;
+  width:100%;
+  max-width:100%;
+  margin:0 auto 44px;
   border:1.5px solid rgba(216,180,254,.35);
 }
 .trial-banner-left .section-tag{
@@ -4208,16 +4493,24 @@ body{
 }
 .trial-banner-left h2{
   color:var(--white);
-  font-size:clamp(24px,2.8vw,36px);
-  margin-bottom:12px;
+  font-size:clamp(24px,2.8vw,34px);
+  margin-bottom:10px;
 }
 .trial-banner-left p{
-  font-size:16.5px;
-  line-height:1.65;
-  color:rgba(255,255,255,.94);
-  margin-bottom:12px;
+  font-size:16px;
+  line-height:1.62;
+  color:rgba(255,255,255,.95);
+  margin-bottom:0;
 }
-.trial-banner-left .trial-sub-rule{
+.trial-cond-foot{
+  font-size:15px;
+  line-height:1.58;
+  color:rgba(255,255,255,.94);
+  margin:2px 0 0;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+.trial-sub-rule{
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -4228,6 +4521,7 @@ body{
   color:#f3e8ff;
   font-size:14px;
   font-weight:700;
+  align-self:flex-start;
 }
 .trial-banner-right{
   background:rgba(255,255,255,.09);
@@ -4275,7 +4569,8 @@ body{
 
 /* FAQ List */
 .faq-wrap{
-  max-width:920px;
+  width:100%;
+  max-width:100%;
   margin:0 auto;
 }
 .faq-head{
@@ -4349,7 +4644,196 @@ body{
   display:block;
 }
 
-/* 8-Field Form Layouts */
+/* SECTION: KHÁCH HÀNG VÀ ĐỐI TÁC ĐÁNH GIÁ (#testimonials - Cosmic Glass 3x2 Grid) */
+.testi-sec{
+  background-color:#140730;
+  background-image:
+    radial-gradient(circle at 16% 18%,rgba(168,85,247,.38) 0%,rgba(107,33,168,.16) 34%,transparent 62%),
+    radial-gradient(circle at 84% 26%,rgba(192,132,252,.32) 0%,rgba(126,34,206,.18) 38%,transparent 66%),
+    radial-gradient(circle at 50% 82%,rgba(147,51,234,.35) 0%,rgba(59,7,100,.22) 45%,transparent 72%),
+    linear-gradient(180deg,#12062C 0%,#1E0B4A 48%,#2B0F5C 100%);
+  color:var(--white);
+  padding:64px 24px 56px;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid rgba(216,180,254,.18);
+}
+.testi-sec .wrap{
+  max-width:1280px;
+  position:relative;
+  z-index:2;
+}
+.testi-head-wrap{
+  text-align:center;
+  max-width:780px;
+  margin:0 auto 38px;
+}
+.testi-head-wrap .section-tag{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(233,213,255,.32);
+  color:#f3e8ff;
+}
+.testi-head-wrap h2{
+  color:var(--white);
+  font-size:clamp(24px,3vw,36px);
+  font-weight:900;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  margin:6px 0 0;
+}
+.testi-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  align-items:stretch;
+}
+.testi-card{
+  background:rgba(255,255,255,.06);
+  border:1.5px solid rgba(233,213,255,.36);
+  border-radius:18px;
+  padding:26px 24px;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 18px 44px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  transition:transform .25s ease,border-color .25s ease,background .25s ease;
+}
+.testi-card:hover{
+  transform:translateY(-4px);
+  border-color:#d8b4fe;
+  background:rgba(255,255,255,.09);
+}
+.testi-user{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+  padding-bottom:14px;
+  border-bottom:1px solid rgba(233,213,255,.16);
+}
+.testi-avatar{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#9333ea 0%,#6b21a8 55%,#3b0764 100%);
+  border:2px solid rgba(233,213,255,.65);
+  color:var(--white);
+  font-family:var(--font-brand);
+  font-size:15px;
+  font-weight:900;
+  display:grid;
+  place-items:center;
+  flex:none;
+  box-shadow:0 8px 18px rgba(0,0,0,.28);
+}
+.testi-meta{
+  text-align:left;
+  min-width:0;
+}
+.testi-meta h3{
+  font-size:17px;
+  font-weight:800;
+  color:var(--white);
+  line-height:1.25;
+  margin:0 0 3px;
+}
+.testi-meta span{
+  display:block;
+  font-size:12.5px;
+  font-weight:600;
+  color:#e9d5ff;
+  line-height:1.35;
+}
+.testi-quote{
+  font-size:14.5px;
+  line-height:1.65;
+  color:rgba(255,255,255,.92);
+  text-align:center;
+  margin:0;
+}
+@media(max-width:1024px){
+  .testi-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+  }
+}
+@media(max-width:640px){
+  .testi-sec{
+    padding:42px 16px 38px !important;
+  }
+  .testi-head-wrap{
+    margin-bottom:24px !important;
+  }
+  .testi-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  .testi-card{
+    padding:18px 16px;
+    border-radius:16px;
+  }
+  .testi-user{
+    margin-bottom:12px;
+    padding-bottom:10px;
+  }
+  .testi-avatar{
+    width:44px;
+    height:44px;
+    font-size:13.5px;
+  }
+  .testi-meta h3{
+    font-size:15.5px;
+  }
+  .testi-meta span{
+    font-size:12px;
+  }
+  .testi-quote{
+    font-size:13.5px;
+    line-height:1.58;
+  }
+}
+
+/* 8-Field Form Layouts & Desktop Mascot Showcase */
+.rgrid{
+  grid-template-columns:.72fr 1.28fr !important;
+  gap:36px !important;
+  align-items:center !important;
+}
+.reg-left{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.reg-mascot-card{
+  width:100%;
+  max-width:480px;
+  border-radius:26px;
+  overflow:hidden;
+  border:2px solid rgba(233,213,255,.45);
+  background:rgba(15,23,42,.35);
+  box-shadow:0 28px 64px rgba(0,0,0,.38);
+  display:flex;
+  position:relative;
+}
+.reg-mascot-card img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+form.reg-card{
+  padding:40px 42px !important;
+}
+@media(max-width:1024px){
+  .rgrid{
+    grid-template-columns:1fr !important;
+  }
+  .reg-left{
+    display:none !important;
+  }
+}
 .rf-row-2{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -4535,9 +5019,43 @@ body{
 /* ==========================================================================
    COMPREHENSIVE MOBILE-FIRST & TABLET OPTIMIZATION (ALL SECTIONS)
    ========================================================================== */
-html,body{
-  overflow-x:hidden;
-  max-width:100%;
+:root{
+  --header-height:70px;
+  --bottom-bar-height:68px;
+}
+html{
+  scroll-padding-top:calc(var(--header-height) + env(safe-area-inset-top, 0px) + 16px);
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+body{
+  overflow-x:clip !important;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  -webkit-text-size-adjust:100%;
+}
+/* 1. Chống rớt dòng lẻ (Orphan Words & Text Wrapping) chuẩn iOS Safari & Android Chrome */
+h1,h2,h3,h4,.b-pdetail-tag,.faq-q,.reg-card-title,.eco-proof-head h3,.ba-top-head h3{
+  text-wrap:balance;
+}
+p,li,.lead,.reg-lead,.faq-a,.eco-vault-lead,.eco-kpi-lead,.hero-cond-note,.leader-bio{
+  text-wrap:pretty;
+}
+.nowrap,.nw{
+  white-space:nowrap;
+  display:inline-block;
+}
+/* 2. Bù trừ Safe Area (Tai thỏ / Dynamic Island) cho Header cố định */
+nav{
+  padding-top:env(safe-area-inset-top, 0px);
+}
+.b-x100-sec{
+  padding:20px 24px 16px;
+}
+.x100-scroll-track{
+  min-height:146vh;
 }
 
 @media(max-width:1080px){
@@ -4545,31 +5063,28 @@ html,body{
     grid-template-columns:1fr;
     padding:28px 24px;
   }
-  /* Fix #x100-ops on Tablet & Mobile: keep 4 interactive step cards visible & remove 260vh sticky trap */
+  /* Trên Mobile & Tablet: Chỉ hiển thị tiêu đề + màn hình 3D (#x100DeviceCard như Ảnh 2), ẩn cột 4 thẻ chữ bên trái (.b-x100-left) */
+  .x100-mob-head{
+    display:block !important;
+    margin-bottom:12px !important;
+  }
+  .b-x100-left{
+    display:none !important;
+  }
   .x100-scroll-track{
-    min-height:auto !important;
+    min-height:172vh !important;
   }
   .x100-sticky-box{
-    position:static !important;
-    padding:0 !important;
+    position:sticky !important;
+    top:calc(var(--header-height, 60px) + env(safe-area-inset-top, 0px) + 6px) !important;
+    padding:4px 0 8px !important;
   }
   .b-x100-sec{
-    padding:52px 24px !important;
+    padding:24px 24px 16px !important;
   }
   .b-x100-grid{
     grid-template-columns:1fr !important;
-    gap:24px !important;
-  }
-  .b-x100-left{
-    display:block !important;
-    width:100%;
-  }
-  .b-halo-list{
-    padding-left:0 !important;
-    gap:10px !important;
-  }
-  .x100-rail-bg{
-    display:none !important;
+    gap:16px !important;
   }
   #inpro-pillars > .wrap{
     padding-left:24px;
@@ -4578,13 +5093,60 @@ html,body{
 }
 
 @media(max-width:768px){
-  /* 1. Hero Section Mobile-First */
+  :root{
+    --header-height:60px;
+  }
+  /* Đồng bộ độ dày nét chữ giữa iPhone (Safari) và Android (Chrome): tắt text-stroke làm bè chữ trên iOS */
+  h1,h2,h2 strong.hl,h3,h3 strong.hl,.b-halo-text h3,.ba-top-head h3,.eco-proof-head h3{
+    -webkit-text-stroke:0 !important;
+  }
+  /* Chống Safari iOS tự động zoom khi chạm vào ô nhập liệu (bắt buộc >= 16px) */
+  input,select,textarea{
+    font-size:16px !important;
+    font-family:inherit;
+  }
+  /* Bù trừ khoảng trống cuối trang cho Sticky Bottom CTA & vạch gạt Home iPhone */
+  footer{
+    padding-bottom:calc(var(--bottom-bar-height) + env(safe-area-inset-bottom, 0px) + 28px) !important;
+  }
+
+  /* Thu gọn khoảng trắng thừa giữa các section trên Mobile (Ảnh 1) */
+  section,.band,.reg{
+    padding:30px 16px !important;
+  }
+  .b-sec{
+    padding:26px 16px 18px !important;
+  }
+  .head,.b-head{
+    margin-bottom:16px !important;
+  }
+  .b-pillars-wrap{
+    padding:18px 0 12px !important;
+  }
+  .b-pillars-wrap > .wrap .b-head{
+    padding:0 16px !important;
+    margin-bottom:8px !important;
+  }
+  .b-pillar-sec{
+    padding:14px 16px 18px !important;
+  }
+  .b-sol-grid{
+    gap:16px !important;
+  }
+  .b-sol-grid .b-sol-stage{
+    min-height:auto !important;
+    padding:4px 0 6px !important;
+  }
+
+  /* 1. Hero Section Mobile-First (dùng svh & safe-area-inset-top để không bị Header hay thanh địa chỉ che) */
   .hero{
-    padding:76px 16px 32px !important;
+    margin-top:calc(var(--header-height) + env(safe-area-inset-top, 0px)) !important;
+    min-height:calc(100svh - var(--header-height)) !important;
+    padding:22px 16px 28px !important;
   }
   .hero h1{
-    font-size:clamp(21px,6vw,27px) !important;
-    line-height:1.24 !important;
+    font-size:clamp(1.25rem,5.5vw,1.68rem) !important;
+    line-height:1.26 !important;
     margin-bottom:10px !important;
   }
   .hero-slogan-box{
@@ -4770,38 +5332,15 @@ html,body{
     margin-top:10px !important;
   }
 
-  /* 3. Section #x100-ops Mobile-First */
+  /* 3. Section #x100-ops Mobile-First (Chỉ hiện màn hình 3D như Ảnh 2) */
   .b-x100-sec{
-    padding:42px 16px !important;
+    padding:20px 16px 14px !important;
   }
-  .b-x100-left h2{
-    font-size:clamp(21px,5.8vw,27px) !important;
-    margin-bottom:14px !important;
+  .x100-mob-head{
+    margin-bottom:10px !important;
   }
-  .b-halo-item{
-    padding:12px !important;
-    border-radius:16px !important;
-    gap:10px !important;
-  }
-  .b-halo-icon{
-    width:40px !important;
-    height:40px !important;
-    border-radius:11px !important;
-  }
-  .b-halo-title-row{
-    gap:6px !important;
-    margin-bottom:3px !important;
-  }
-  .b-halo-item h3{
-    font-size:14px !important;
-  }
-  .b-halo-pill{
-    font-size:10px !important;
-    padding:2px 8px !important;
-  }
-  .b-halo-item p{
-    font-size:12.5px !important;
-    line-height:1.42 !important;
+  .x100-scroll-track{
+    min-height:168vh !important;
   }
   .x100-stage-wrap{
     min-height:auto !important;
@@ -4878,11 +5417,20 @@ html,body{
     font-size:13.5px !important;
     line-height:1.25 !important;
   }
+  .leader-titles{
+    margin-top:6px !important;
+    padding-top:6px !important;
+    gap:3px !important;
+  }
+  .leader-titles strong{
+    font-size:11.5px !important;
+    line-height:1.38 !important;
+  }
   .leader-info p.leader-bio{
     font-size:11.5px !important;
     line-height:1.42 !important;
     margin-top:5px !important;
-    padding-top:6px !important;
+    padding-top:0 !important;
   }
 
   /* 6. Trial Banner & FAQ (#trial-faq) & Registration Form (#register) Mobile-First */
@@ -5027,7 +5575,7 @@ html,body{
       <div class="menu-mobile-actions">
         <a href="#register" class="btn btn-p" onclick="closeMenu()">Đăng ký dùng thử miễn phí 30 ngày</a>
         <a href="tel:0925376699" class="btn btn-o"><svg class="ico"><use href="#i-phone"/></svg> Hotline 0925 376 699</a>
-        <a href="https://zalo.me/925376699" target="_blank" rel="noopener" class="btn btn-zalo">Chat Zalo tư vấn</a>
+        <a href="https://www.facebook.com/profile.php?id=61595587119025" data-fanpage-link target="_blank" rel="noopener" class="btn btn-zalo">Nhắn tin Fanpage tư vấn</a>
       </div>
     </div>
     <div class="nav-r">
@@ -5121,7 +5669,15 @@ html,body{
         </div>
 
         <div class="hero-cond-note">
-          <strong>Điều kiện dùng thử 30 ngày:</strong> Doanh thu <strong>lớn hơn 3 tỷ đồng/tháng</strong> HOẶC số đơn <strong>lớn hơn 10.000 đơn/tháng</strong>. Chỉ cần vượt một ngưỡng và đồng ý gửi góp ý về phần mềm khi kết thúc sử dụng. Các trường hợp khác: liên hệ riêng để được tư vấn.
+          <div class="hero-cond-top">
+            <strong>Điều kiện dùng thử miễn phí 30 ngày:</strong>
+            <span class="hero-cond-badge"><i aria-hidden="true"></i> Giới hạn trong 20 ngày kể từ hôm nay</span>
+          </div>
+          <div class="hero-cond-lines">
+            <div class="hero-cond-line"><span class="hero-cond-dot" aria-hidden="true"></span><span>Doanh thu <strong>trên 3 tỷ đồng/tháng</strong></span></div>
+            <div class="hero-cond-line"><span class="hero-cond-dot" aria-hidden="true"></span><span>Số lượng đơn <strong>trên 10.000 đơn hàng/tháng</strong></span></div>
+          </div>
+          <p class="hero-cond-sub">Với các trường hợp chưa đáp ứng điều kiện trên, vui lòng liên hệ riêng để được tư vấn.</p>
         </div>
       </div>
 
@@ -5438,6 +5994,34 @@ html,body{
   </div>
 </header>
 
+<!-- VIDEO DEMO BAND -->
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="rv">
+      <span class="section-tag">VIDEO GIỚI THIỆU HỆ THỐNG</span>
+      <h2>Xem <strong class="hl">INPRO.vn OS</strong> vận&nbsp;hành thực&nbsp;tế</h2>
+      <p>Khám phá cách INPRO.vn OS hợp nhất dữ liệu bán hàng đa kênh, tự động hóa vận hành và hỗ trợ doanh nghiệp ra quyết định tức thì.</p>
+    </div>
+    <div class="vframe rv">
+      <div class="vbar">
+        <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+        <span>INPRO.vn OS · Video giới thiệu &amp; trải nghiệm thực tế</span>
+      </div>
+      <div class="vbody" id="vbody" role="button" tabindex="0" aria-label="Phát video giới thiệu INPRO.vn OS" onclick="playVideo()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();playVideo();}">
+        <div class="vcover" id="vcover">
+          <img class="vthumb" src="assets/man-hinh-realtime.jpg" alt="INPRO.vn OS - Màn hình vận hành Realtime thực tế" loading="lazy" width="1672" height="941">
+          <div class="vplay" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg>
+          </div>
+          <span class="vcaption">Bấm để phát video demo</span>
+        </div>
+        <div class="vplayer" id="vplayer"></div>
+      </div>
+    </div>
+    <a href="#register" data-flow="trial" class="btn btn-p b-pill-btn">Đăng ký dùng thử miễn phí 30 ngày →</a>
+  </div>
+</section>
+
 <!-- SECTION 2: BÀI TOÁN DÒNG TIỀN & GIẢI PHÁP 3 CHỮ "1" + QUẢN LÝ X VẬN KHO (BINGLE / APOLO STYLE) -->
 <section id="solutions" class="b-sec b-pain-sec">
   <!-- Subtle geometric confetti shapes (Bingle style, pure purple-indigo) -->
@@ -5470,10 +6054,10 @@ html,body{
       <!-- Thẻ 2 -->
       <div class="b-feat-col rv">
         <div class="b-phone-art">
-          <img src="assets/pain-2-toi-uu-nguon-luc.jpg" alt="Thêm chiến dịch, thêm KOC, thêm đơn hàng - INPRO.vn" loading="lazy" width="1536" height="1024">
+          <img src="assets/pain-2-toi-uu-nguon-luc.jpg" alt="Thêm dự án, thêm nhân sự, hiệu suất chưa tương xứng - INPRO.vn" loading="lazy" width="1536" height="1024">
         </div>
         <div class="b-feat-body">
-          <h3>Thêm chiến dịch, thêm KOC, thêm đơn&nbsp;hàng</h3>
+          <h3>Thêm dự án, thêm nhân sự, hiệu&nbsp;suất chưa tương&nbsp;xứng</h3>
           <p>Khối lượng công việc tăng theo quy mô. Liên tục phát sinh chi phí tuyển dụng, quản lý nhưng hiệu suất nhân sự không tăng tương xứng với nguồn lực bỏ ra.</p>
         </div>
       </div>
@@ -5491,12 +6075,12 @@ html,body{
     </div>
 
     <div class="b-pain-cta rv">
-      <a href="#inpro-pillars" class="btn btn-p b-pill-btn">Khám phá AI đi vào từng đầu việc →</a>
+      <a href="#inpro-pillars" class="btn btn-p b-pill-btn">Khám phá AI hỗ trợ xử lý từng công việc →</a>
     </div>
   </div>
 </section>
 
-<!-- SECTION 2B: AI VÀ AUTOMATION ĐI VÀO TỪNG ĐẦU VIỆC (3 HÀNG THIẾT BỊ 3D ĐAN XEN) -->
+<!-- SECTION 2B: AI HỖ TRỢ XỬ LÝ TỪNG CÔNG VIỆC, GIẢM TẢI CHO ĐỘI NGŨ (3 HÀNG THIẾT BỊ 3D ĐAN XEN) -->
 <section id="inpro-pillars" class="b-sec b-pillars-wrap">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
@@ -5511,12 +6095,12 @@ html,body{
   <div class="wrap">
     <div class="b-head rv">
       <span class="section-tag">Giải pháp AI &amp; Tự động hóa vận hành</span>
-      <h2><strong class="hl">AI và Automation</strong> đi vào từng đầu&nbsp;việc</h2>
+      <h2><strong class="hl">AI hỗ trợ xử lý từng công&nbsp;việc</strong><br>giảm&nbsp;tải cho đội&nbsp;ngũ</h2>
       <span class="b-head-line" aria-hidden="true"></span>
     </div>
   </div>
 
-  <!-- ================= TRỤ CỘT 01: BOOKING KOC (ẢNH TRÁI - NỘI DUNG PHẢI) ================= -->
+  <!-- ================= TRỤ CỘT 01: BOOKING KOL/KOC (ẢNH TRÁI - NỘI DUNG PHẢI) ================= -->
   <div class="b-pillar-sec" id="pillar-1">
     <div class="b-row-wave is-left" aria-hidden="true">
       <svg viewBox="0 0 720 680" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -5535,25 +6119,25 @@ html,body{
             <div class="b-device-screen">
               <div class="b-dev-top">
                 <div>
-                  <small>INPRO.vn OS · Scout &amp; Booking KOC</small>
-                  <b>Quản lý chiến dịch KOC</b>
+                  <small>INPRO.vn OS · Booking KOL/KOC</small>
+                  <b>Quản lý chiến dịch KOL/KOC</b>
                 </div>
-                <span class="b-dev-badge">● AI SCOUT</span>
+                <span class="b-dev-badge">AI ĐỀ XUẤT</span>
               </div>
               <div class="b-dev-hero-card">
                 <div class="b-dev-hero-meta">
-                  <span>AI tìm ứng viên · Hệ thống giữ tiến độ</span>
-                  <strong>Booking KOC tập trung</strong>
+                  <span>AI đề xuất KOC phù hợp · Lưu trữ thông tin</span>
+                  <strong>Booking KOL/KOC tập trung</strong>
                 </div>
                 <div class="b-dev-ring">KOC</div>
               </div>
               <div class="b-dev-tiles is-three" aria-hidden="true">
-                <div class="b-dtile"><svg class="ico"><use href="#i-spark"/></svg><span>Scout đề xuất</span></div>
-                <div class="b-dtile"><svg class="ico"><use href="#i-video"/></svg><span>Lịch sử &amp; Giá</span></div>
+                <div class="b-dtile"><svg class="ico"><use href="#i-spark"/></svg><span>AI đề xuất</span></div>
+                <div class="b-dtile"><svg class="ico"><use href="#i-video"/></svg><span>Lưu trữ hợp tác</span></div>
                 <div class="b-dtile"><svg class="ico"><use href="#i-coin"/></svg><span>Theo dõi thanh toán</span></div>
               </div>
               <div class="b-dev-shot">
-                <img src="assets/x100-3-chien-dich-koc.png" alt="Giao diện quản lý chiến dịch Booking KOC và đề xuất ứng viên trên INPRO.vn" loading="lazy" width="1920" height="917">
+                <img src="assets/x100-3-chien-dich-koc.png" alt="Giao diện quản lý chiến dịch Booking KOL/KOC và AI đề xuất trên INPRO.vn" loading="lazy" width="1920" height="917">
               </div>
             </div>
           </div>
@@ -5561,15 +6145,15 @@ html,body{
           <div class="b-float-chip b-fc-top">
             <span class="b-fc-dot"></span>
             <div>
-              <b>Scout đề xuất KOC theo tiêu chí</b>
-              <small>Lưu hồ sơ, liên hệ, giá &amp; lịch sử hợp tác</small>
+              <b>AI đề xuất KOC phù hợp tiêu chí</b>
+              <small>Theo dõi quá trình hợp tác và lưu trữ thông tin</small>
             </div>
           </div>
           <div class="b-float-chip b-fc-bot">
             <div class="b-fc-icon"><svg class="ico"><use href="#i-video"/></svg></div>
             <div>
-              <b>Theo dõi xuyên suốt trên hồ sơ chung</b>
-              <small>Chốt giá · Lịch lên bài · Thanh toán</small>
+              <b>Quản lý KOC dễ dàng</b>
+              <small>Thông tin · Sản phẩm · Thời gian · Thanh toán</small>
             </div>
           </div>
         </div>
@@ -5577,20 +6161,20 @@ html,body{
         <!-- Cột Phải: Nội dung Đầu việc 1 -->
         <div class="b-pillar-detail rv">
           <div class="b-pdetail-top">
-            <h3 class="b-pdetail-tag">BOOKING KOC — AI TÌM ỨNG VIÊN, HỆ THỐNG GIỮ TIẾN ĐỘ</h3>
+            <h3 class="b-pdetail-tag">BOOKING KOL/KOC</h3>
           </div>
           <ul class="b-pdetail-list">
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Scout đề xuất KOC</strong> theo dữ liệu và tiêu chí của thương hiệu.</span>
+              <span><strong>AI đề xuất KOC</strong> phù hợp với tiêu chí từng chiến dịch.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Hồ sơ, liên hệ, giá và lịch sử hợp tác</strong> được lưu cùng chiến dịch.</span>
+              <span><strong>Hệ thống theo dõi quá trình hợp tác</strong> và lưu trữ thông tin.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Theo dõi từ lựa chọn, chốt giá, lịch lên bài đến thanh toán</strong> trên hồ sơ chung. Việc liên hệ và thương lượng vẫn cần người phụ trách.</span>
+              <span><strong>Quản lý KOC dễ dàng:</strong> thông tin, sản phẩm, thời gian, thanh toán.</span>
             </li>
           </ul>
           <div class="b-sol-actions">
@@ -5601,7 +6185,7 @@ html,body{
     </div>
   </div>
 
-  <!-- ================= TRỤ CỘT 02: ADS AI (NỘI DUNG TRÁI - ẢNH PHẢI) ================= -->
+  <!-- ================= TRỤ CỘT 02: TRỢ LÝ QUẢNG CÁO AI (NỘI DUNG TRÁI - ẢNH PHẢI) ================= -->
   <div class="b-pillar-sec is-alt" id="pillar-2">
     <div class="b-row-wave is-right" aria-hidden="true">
       <svg viewBox="0 0 720 680" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -5616,20 +6200,20 @@ html,body{
         <!-- Cột Trái: Nội dung Đầu việc 2 -->
         <div class="b-pillar-detail rv">
           <div class="b-pdetail-top">
-            <h3 class="b-pdetail-tag">ADS AI — TỰ ĐỘNG THEO DÕI, ĐỀ XUẤT TỐI ƯU</h3>
+            <h3 class="b-pdetail-tag">Trợ lý Quảng cáo AI</h3>
           </div>
           <ul class="b-pdetail-list">
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>AI theo dõi dữ liệu chiến dịch</strong> và đề xuất tối ưu theo cấu hình.</span>
+              <span><strong>Theo dõi quảng cáo liên tục,</strong> cảnh báo và đề xuất cải thiện kịp thời.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Người phụ trách xem chỉ số, lý do, giới hạn rồi duyệt theo quyền;</strong> có nhật ký xử lý rõ ràng.</span>
+              <span><strong>Báo cáo đầy đủ, giảm tác vụ thủ công,</strong> hỗ trợ ra quyết định nhanh.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Giảm việc kiểm tra lặp lại</strong> để đội quảng cáo tập trung vào quyết định và nội dung.</span>
+              <span><strong>Lưu trữ lịch sử xử lý,</strong> AI học hỏi kinh nghiệm sau các chiến dịch.</span>
             </li>
           </ul>
           <div class="b-sol-actions">
@@ -5644,15 +6228,15 @@ html,body{
             <div class="b-device-screen">
               <div class="b-dev-top">
                 <div>
-                  <small>INPRO.vn OS · Trợ lý Ads AI</small>
+                  <small>INPRO.vn OS · Trợ lý Quảng cáo AI</small>
                   <b>Theo dõi &amp; Đề xuất tối ưu</b>
                 </div>
-                <span class="b-dev-badge">● NGƯỜI DUYỆT</span>
+                <span class="b-dev-badge">NGƯỜI DUYỆT</span>
               </div>
               <div class="b-dev-hero-card">
                 <div class="b-dev-hero-meta">
-                  <span>Xem chỉ số, lý do, giới hạn &amp; duyệt theo quyền</span>
-                  <strong>Kiểm soát Ads AI</strong>
+                  <span>Đề xuất tối ưu quảng cáo · Hỗ trợ ra quyết định</span>
+                  <strong>Trợ lý Quảng cáo AI</strong>
                 </div>
                 <div class="b-dev-ring">AI</div>
               </div>
@@ -5662,7 +6246,7 @@ html,body{
                 <div class="b-dtile"><svg class="ico"><use href="#i-book"/></svg><span>Nhật ký xử lý</span></div>
               </div>
               <div class="b-dev-shot">
-                <img src="assets/tru-cot-2.png" alt="Giao diện Ads AI theo dõi dữ liệu chiến dịch và đề xuất tối ưu trên INPRO.vn" loading="lazy" width="1920" height="917">
+                <img src="assets/tru-cot-2.png" alt="Giao diện Trợ lý Quảng cáo AI theo dõi dữ liệu chiến dịch và đề xuất tối ưu trên INPRO.vn" loading="lazy" width="1920" height="917">
               </div>
             </div>
           </div>
@@ -5670,7 +6254,7 @@ html,body{
           <div class="b-float-chip b-fc-top is-left-side">
             <span class="b-fc-dot"></span>
             <div>
-              <b>Đề xuất kèm lý do &amp; giới hạn</b>
+              <b>Đề xuất tối ưu quảng cáo, hỗ trợ ra quyết định</b>
               <small>Người phụ trách xem xét và duyệt theo quyền</small>
             </div>
           </div>
@@ -5686,7 +6270,7 @@ html,body{
     </div>
   </div>
 
-  <!-- ================= TRỤ CỘT 03: CSKH (ẢNH TRÁI - NỘI DUNG PHẢI) ================= -->
+  <!-- ================= TRỤ CỘT 03: CHĂM SÓC KHÁCH HÀNG (ẢNH TRÁI - NỘI DUNG PHẢI) ================= -->
   <div class="b-pillar-sec" id="pillar-3">
     <div class="b-row-wave is-left" aria-hidden="true">
       <svg viewBox="0 0 720 680" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -5705,25 +6289,25 @@ html,body{
             <div class="b-device-screen">
               <div class="b-dev-top">
                 <div>
-                  <small>INPRO.vn OS · Hỗ trợ CSKH</small>
+                  <small>INPRO.vn OS · Chăm sóc khách hàng</small>
                   <b>TikTok Shop &amp; Shopee</b>
                 </div>
-                <span class="b-dev-badge">● AI DRAFT</span>
+                <span class="b-dev-badge">TRỢ LÝ AI</span>
               </div>
               <div class="b-dev-hero-card">
                 <div class="b-dev-hero-meta">
-                  <span>AI soạn phản hồi · Đội ngũ xử lý ca khó</span>
-                  <strong>Hỗ trợ CSKH đa sàn</strong>
+                  <span>Phản hồi khách hàng nhanh chóng · Phân loại tình huống</span>
+                  <strong>Chăm sóc khách hàng đa sàn</strong>
                 </div>
                 <div class="b-dev-ring">CSKH</div>
               </div>
               <div class="b-dev-tiles is-three" aria-hidden="true">
                 <div class="b-dtile"><svg class="ico"><use href="#i-chat"/></svg><span>Tin nhắn TikTok</span></div>
                 <div class="b-dtile"><svg class="ico"><use href="#i-spark"/></svg><span>Đánh giá Shopee</span></div>
-                <div class="b-dtile"><svg class="ico"><use href="#i-users"/></svg><span>Chuyển ca khó</span></div>
+                <div class="b-dtile"><svg class="ico"><use href="#i-users"/></svg><span>Phân loại tình huống</span></div>
               </div>
               <div class="b-dev-shot">
-                <img src="assets/tru-cot-3.png" alt="Giao diện hỗ trợ CSKH và theo dõi phản hồi trên INPRO.vn" loading="lazy" width="1920" height="917">
+                <img src="assets/tru-cot-3.png" alt="Giao diện Chăm sóc khách hàng và Trợ lý AI trên INPRO.vn" loading="lazy" width="1920" height="917">
               </div>
             </div>
           </div>
@@ -5731,15 +6315,15 @@ html,body{
           <div class="b-float-chip b-fc-top">
             <span class="b-fc-dot"></span>
             <div>
-              <b>Gợi ý bản nháp tin nhắn &amp; đánh giá</b>
-              <small>Nhân sự kiểm tra nội dung trước khi gửi</small>
+              <b>Phản hồi khách hàng nhanh chóng</b>
+              <small>Áp dụng nền tảng TikTok và Shopee</small>
             </div>
           </div>
           <div class="b-float-chip b-fc-bot">
             <div class="b-fc-icon"><svg class="ico"><use href="#i-chat"/></svg></div>
             <div>
-              <b>Chuyển người phụ trách ca phức tạp</b>
-              <small>Hàng lỗi · Đổi trả · Hoàn tiền · Kích ứng</small>
+              <b>Phân loại tình huống khó</b>
+              <small>Hỗ trợ xử lý dưới sự giám sát của nhân viên chuyên môn</small>
             </div>
           </div>
         </div>
@@ -5747,20 +6331,20 @@ html,body{
         <!-- Cột Phải: Nội dung Đầu việc 3 -->
         <div class="b-pillar-detail rv">
           <div class="b-pdetail-top">
-            <h3 class="b-pdetail-tag">CSKH — AI SOẠN PHẢN HỒI, ĐỘI NGŨ XỬ LÝ CA KHÓ</h3>
+            <h3 class="b-pdetail-tag">CHĂM SÓC KHÁCH HÀNG</h3>
           </div>
           <ul class="b-pdetail-list">
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>AI hỗ trợ bản nháp</strong> cho tin nhắn TikTok Shop và đánh giá Shopee.</span>
+              <span><strong>Trả lời khách hàng nhanh hơn</strong> trên TikTok Shop và Shopee.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Nhân sự kiểm tra trước khi gửi;</strong> đảm bảo phản hồi đúng ngữ cảnh thương hiệu.</span>
+              <span><strong>Hỗ trợ xử lý tình huống</strong> dưới sự giám sát của nhân viên chuyên môn.</span>
             </li>
             <li>
               <span class="b-pcheck"><svg class="ico"><use href="#i-check"/></svg></span>
-              <span><strong>Các tình huống hàng lỗi, đổi trả, hoàn tiền hoặc kích ứng</strong> được chuyển cho người phụ trách xử lý.</span>
+              <span><strong>Giảm thời gian trả lời những câu hỏi lặp lại,</strong> gia tăng hiệu suất chăm sóc khách hàng.</span>
             </li>
           </ul>
           <div class="b-sol-actions">
@@ -5785,26 +6369,26 @@ html,body{
         <div class="eco-vault-card">
           <div>
             <div class="eco-vault-top">
-              <span class="eco-vault-pill"><i aria-hidden="true"></i> HIỆU QUẢ QUY ĐỔI NỘI BỘ · 2026</span>
+              <span class="eco-vault-pill"><i aria-hidden="true"></i> TIẾT KIỆM CHI PHÍ VẬN HÀNH</span>
               <span class="eco-vault-badge">INPRO.vn OS · AI &amp; Automation</span>
             </div>
 
             <div class="eco-vault-hero">
               <div class="eco-vault-num">2 TỶ 160 TRIỆU</div>
-              <span class="eco-vault-unit">ĐỒNG / NĂM*</span>
-              <p class="eco-vault-lead">AI và tự động hóa giúp giảm nhu cầu tuyển thêm 18 nhân sự trong Booking KOC, Ads và Chăm sóc khách hàng.</p>
+              <span class="eco-vault-unit">ĐỒNG / NĂM</span>
+              <p class="eco-vault-lead">AI hỗ trợ xử lý công việc, giúp giảm nhu cầu bổ sung 18 nhân sự ở 3 bộ phận: KOC, Quảng cáo và Chăm sóc khách hàng.</p>
             </div>
 
             <!-- Phép tính quy đổi trực quan 4 bước -->
             <div class="eco-formula-box">
               <div class="eco-formula-label">
                 <span>CÔNG THỨC QUY ĐỔI CHI PHÍ NHÂN SỰ THEO NĂM</span>
-                <span>18 × 10 tr × 12</span>
+                <span>18 (nhân sự) x 10 (triệu) x 12 (tháng)</span>
               </div>
               <div class="eco-formula-grid">
                 <div class="eco-fcell">
                   <strong>18</strong>
-                  <span>nhân sự giảm nhu cầu tuyển thêm</span>
+                  <span>nhân sự chuyên môn</span>
                 </div>
                 <span class="eco-fop" aria-hidden="true">×</span>
                 <div class="eco-fcell">
@@ -5819,7 +6403,7 @@ html,body{
                 <span class="eco-fop is-eq" aria-hidden="true">=</span>
                 <div class="eco-fcell is-total">
                   <strong>2,16 tỷ</strong>
-                  <span>đồng/năm*</span>
+                  <span>đồng/năm</span>
                 </div>
               </div>
             </div>
@@ -5832,7 +6416,7 @@ html,body{
             </div>
 
             <div class="eco-vault-foot">
-              <strong>* Chú thích:</strong> Ước tính nội bộ năm 2026: 18 nhân sự × 10 triệu đồng/tháng × 12 tháng. Đây là chi phí nhân sự quy đổi theo năm, chưa trừ chi phí công nghệ và triển khai; không phải cam kết lợi nhuận cho khách hàng.
+              <strong>Chú thích:</strong> Ước tính nội bộ năm 2026: 18 nhân sự, mức 10 triệu đồng/tháng trong 12 tháng. Đây là chi phí nhân sự quy đổi theo năm, chưa trừ chi phí công nghệ và triển khai; không phải cam kết lợi nhuận cho khách hàng.
             </div>
           </div>
         </div>
@@ -5840,19 +6424,19 @@ html,body{
         <!-- Cột Phải: 3D Pearl-White KPI Card + 5 Thương hiệu vận hành thực tế -->
         <div class="eco-right-col">
           <div class="eco-kpi-card">
-            <p class="eco-kpi-lead"><strong>5 thương hiệu</strong> cùng vận hành với tổng nhân sự <strong>dưới 50 người</strong> toàn công ty. Hệ thống tiền thân của INPRO.vn được xây dựng để điều hành chính hệ sinh thái này, đưa AI vào từng đầu việc để tối ưu chi phí và giữ lại nhiều lợi nhuận hơn.</p>
+            <p class="eco-kpi-lead"><strong>Chưa đến 50 nhân sự</strong> vẫn có thể vận hành <strong>5 thương hiệu</strong> cùng lúc. Nhờ ứng dụng AI vào từng công việc, hệ thống tiền thân của INPRO.vn giúp giảm áp lực nhân sự, tiết kiệm chi phí vận hành và tạo nền tảng để doanh nghiệp tiếp tục mở rộng quy mô.</p>
             <div class="eco-kpi-grid">
               <div class="eco-kpi-tile">
-                <b>18</b>
-                <span>nhân sự giảm nhu cầu tuyển thêm</span>
+                <b>1</b>
+                <span>hệ thống</span>
               </div>
               <div class="eco-kpi-tile">
                 <b>5</b>
-                <span>thương hiệu cùng vận hành</span>
+                <span>thương hiệu</span>
               </div>
               <div class="eco-kpi-tile">
                 <b>&lt;50</b>
-                <span>nhân sự toàn công ty</span>
+                <span>nhân sự</span>
               </div>
             </div>
           </div>
@@ -5861,7 +6445,7 @@ html,body{
             <div>
               <div class="eco-brands-head">
                 <b>Hệ sinh thái 5 thương hiệu ứng dụng thực tế</b>
-                <span>● 1 HỆ THỐNG ĐIỀU HÀNH</span>
+                <span>1 HỆ THỐNG ĐIỀU HÀNH</span>
               </div>
 
               <div class="eco-brands-grid">
@@ -5871,7 +6455,7 @@ html,body{
                   </div>
                   <div class="eco-brand-meta">
                     <strong>NERMAN</strong>
-                    <small>Mỹ phẩm &amp; Chăm sóc nam giới</small>
+                    <small>Mỹ phẩm và chăm sóc nam giới</small>
                   </div>
                 </div>
 
@@ -5881,7 +6465,7 @@ html,body{
                   </div>
                   <div class="eco-brand-meta">
                     <strong>MISTORY</strong>
-                    <small>Bán lẻ đa kênh &amp; Kho vận</small>
+                    <small>Mỹ phẩm nữ giới gắn với Văn hóa Việt</small>
                   </div>
                 </div>
 
@@ -5891,7 +6475,7 @@ html,body{
                   </div>
                   <div class="eco-brand-meta">
                     <strong>LION BARTENDER</strong>
-                    <small>Nguyên liệu &amp; Dụng cụ pha chế</small>
+                    <small>Sản phẩm chăm sóc cá nhân nam giới</small>
                   </div>
                 </div>
 
@@ -5901,7 +6485,7 @@ html,body{
                   </div>
                   <div class="eco-brand-meta">
                     <strong>MENOW</strong>
-                    <small>Phân phối độc quyền mỹ phẩm</small>
+                    <small>Mỹ phẩm và làm đẹp nữ giới</small>
                   </div>
                 </div>
 
@@ -5909,13 +6493,11 @@ html,body{
                   <div class="eco-brand-logo is-spenny">SP</div>
                   <div class="eco-brand-meta">
                     <strong>SPENNY</strong>
-                    <small>Thương hiệu phân phối độc quyền tại Việt Nam · Vận hành chung trên hệ thống</small>
+                    <small>Mỹ phẩm nội địa Trung Quốc</small>
                   </div>
                 </div>
               </div>
             </div>
-
-            <p class="eco-brands-note">Điều kiện dùng thử 30 ngày: Doanh thu <strong>&gt; 3 tỷ đồng/tháng</strong> HOẶC số đơn <strong>&gt; 10.000 đơn/tháng</strong> và đồng ý gửi góp ý sau sử dụng.</p>
           </div>
         </div>
       </div>
@@ -6023,7 +6605,7 @@ html,body{
                       <small id="x100StageSub">INPRO.vn OS · KIỂM SOÁT LỢI NHUẬN 01 / 04</small>
                       <b id="x100PreviewTitle">01 · Theo dõi lợi nhuận đóng góp</b>
                     </div>
-                    <span class="b-dev-badge" id="x100StageBadge">● LỢI NHUẬN ĐÓNG GÓP</span>
+                    <span class="b-dev-badge" id="x100StageBadge">LỢI NHUẬN ĐÓNG GÓP</span>
                   </div>
 
                   <div class="x100-hero-banner">
@@ -6044,8 +6626,8 @@ html,body{
                       <strong id="x100M1Val">Giá vốn · Phí sàn · Ads · KOC</strong>
                     </div>
                     <div class="x100-mcell">
-                      <small id="x100M2Label">TRẠNG THÁI DỮ LIỆU</small>
-                      <strong id="x100M2Val" class="hl-p">Hiển thị rõ số thực &amp; phần tạm tính</strong>
+                      <small id="x100M2Label">PHẠM VI TỔNG HỢP</small>
+                      <strong id="x100M2Val" class="hl-p">Theo thương hiệu, shop, sàn &amp; thời gian</strong>
                     </div>
                   </div>
                 </div>
@@ -6062,8 +6644,8 @@ html,body{
               <div class="x100-float-chip is-bot">
                 <div class="b-fc-icon"><svg class="ico"><use href="#i-coin"/></svg></div>
                 <div>
-                  <b id="x100ChipBotTitle">Minh bạch độ phủ giá vốn &amp; phí sàn</b>
-                  <small id="x100ChipBotSub">Tách bạch lợi nhuận đóng góp với lợi nhuận ròng</small>
+                  <b id="x100ChipBotTitle">Bám sát biên lợi nhuận đóng góp</b>
+                  <small id="x100ChipBotSub">Giúp người điều hành biết tiền đi đâu mỗi ngày</small>
                 </div>
               </div>
             </div>
@@ -6073,40 +6655,13 @@ html,body{
     </div>
   </div>
 </section>
-<!-- VIDEO DEMO BAND -->
-<section class="band" id="demo">
-  <div class="wrap">
-    <div class="rv">
-      <h2>Xem INPRO.vn OS vận hành thực tế</h2>
-      <p>Khám phá cách INPRO.vn OS hợp nhất dữ liệu bán hàng đa kênh, tự động hóa vận hành và hỗ trợ doanh nghiệp ra quyết định tức thì.</p>
-    </div>
-    <div class="vframe rv">
-      <div class="vbar">
-        <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
-        <span>INPRO.vn OS · Video giới thiệu &amp; trải nghiệm thực tế</span>
-      </div>
-      <div class="vbody" id="vbody" role="button" tabindex="0" aria-label="Phát video giới thiệu INPRO.vn OS" onclick="playVideo()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();playVideo();}">
-        <div class="vcover" id="vcover">
-          <img class="vthumb" src="assets/man-hinh-realtime.jpg" alt="INPRO.vn OS - Màn hình vận hành Realtime thực tế" loading="lazy" width="1672" height="941">
-          <div class="vplay" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg>
-          </div>
-          <span class="vcaption">Bấm để phát video demo</span>
-        </div>
-        <div class="vplayer" id="vplayer"></div>
-      </div>
-    </div>
-    <a href="#register" data-flow="trial" class="btn btn-w">Đăng ký dùng thử miễn phí 30 ngày →</a>
-  </div>
-</section>
-
 <!-- SECTION 3: VÌ SAO LỰA CHỌN INPRO.VN -->
 <section id="why" class="bg-grey">
   <div class="wrap">
     <div class="head rv">
       <span class="section-tag">NGUỒN GỐC TỪ VẬN HÀNH THỰC TẾ</span>
       <h2>Người xây phần&nbsp;mềm cũng là <strong class="hl">người dùng nó để điều&nbsp;hành</strong></h2>
-      <p class="lead">5 thương hiệu cùng vận hành với tổng nhân sự dưới 50 người toàn công ty. INPRO.vn được phát triển từ chính hệ thống điều hành nội bộ này để tối ưu chi phí và giữ lại nhiều lợi nhuận hơn.</p>
+      <p class="lead">Chưa đến 50 nhân sự vẫn có thể vận hành 5 thương hiệu cùng lúc. Nhờ ứng dụng AI vào từng công việc, hệ thống tiền thân của INPRO.vn giúp giảm áp lực nhân sự, tiết kiệm chi phí vận hành và tạo nền tảng để doanh nghiệp tiếp tục mở rộng quy mô.</p>
     </div>
 
     <!-- 3A + 3B: 1 BÊN ẢNH LỚN FOUNDER & CHAIRMAN ĐẶNG THANH ĐỊNH · 1 BÊN NỘI DUNG CÂU CHUYỆN & HỆ SINH THÁI AI -->
@@ -6130,11 +6685,11 @@ html,body{
         </div>
 
         <div class="founder-portrait-card">
-          <img src="assets/founder-dang-thanh-dinh.jpg" alt="Founder &amp; Chairman INPRO.vn – Đặng Thanh Định" loading="lazy" width="1200" height="1200">
+          <img src="assets/founder-dang-thanh-dinh.jpg" alt="Founder &amp; Chairman INPRO.vn, Đặng Thanh Định" loading="lazy" width="1200" height="1200">
         </div>
 
         <div class="founder-nameplate">
-          <b>Founder INPRO.vn – Chairman<br>Đặng Thanh Định</b>
+          <b>Founder &amp; Chairman INPRO.vn<br>Đặng Thanh Định</b>
         </div>
       </div>
 
@@ -6143,7 +6698,7 @@ html,body{
         <!-- Khối 1: Câu chuyện thực chiến từ Founder -->
         <div class="fn-story-card">
           <span class="section-tag">TỪ TRẢI NGHIỆM ĐIỀU HÀNH THỰC CHIẾN</span>
-          <p class="fn-lead"><strong>Founder &amp; Chairman INPRO.vn – Đặng Thanh Định</strong> từng đối mặt với những khó khăn trong quản lý dữ liệu, nhân sự và dòng tiền.</p>
+          <p class="fn-lead"><strong>Founder &amp; Chairman INPRO.vn, Đặng Thanh Định</strong> từng đối mặt với những khó khăn trong quản lý dữ liệu, nhân sự và dòng tiền.</p>
           <p>Thấu hiểu những vấn đề này từ chính trải nghiệm điều hành, anh đã phát triển INPRO.vn trước hết để giải quyết nhu cầu quản trị của doanh nghiệp mình. Hiện nay, phần mềm đã được mở rộng để hỗ trợ các nhà bán hàng với sứ mệnh <strong>"Tăng lời, vững lãi"</strong>.</p>
         </div>
 
@@ -6153,7 +6708,7 @@ html,body{
             <div class="fn-ai-icon" aria-hidden="true">
               <svg class="ico"><use href="#i-spark"/></svg>
             </div>
-            <h3>Phát triển HỆ SINH THÁI AI – tối&nbsp;ưu từng khâu vận&nbsp;hành</h3>
+            <h3>Phát triển HỆ SINH THÁI AI tối&nbsp;ưu từng khâu vận&nbsp;hành</h3>
           </div>
           <p>Để công nghệ xử lý những công việc lặp lại, nhân sự tập trung vào những quyết định quan trọng.</p>
           <p>Đồng thời, việc tập trung dữ liệu, chuẩn hóa quy trình và từng bước tích lũy tri thức vận hành trên hệ thống còn hướng tới một giá trị lâu dài: <strong>giảm sự phụ thuộc vào từng cá nhân, hạn chế thất thoát kinh nghiệm khi nhân sự thay đổi và duy trì tính kế thừa trong hoạt động doanh nghiệp.</strong></p>
@@ -6177,7 +6732,11 @@ html,body{
           <div class="leader-info">
             <span class="leader-role">FOUNDER &amp; CHAIRMAN</span>
             <h4>Đặng Thanh Định</h4>
-            <p class="leader-bio">Chủ tịch Nerman; từng sáng lập nền tảng influencer marketing Minet Asia. Anh cùng đội ngũ xây dựng hệ thống INPRO.vn từ chính nhu cầu vận hành doanh nghiệp mình.</p>
+            <div class="leader-titles">
+              <strong>Chủ tịch Nerman</strong>
+              <strong>Nhà sáng lập nền tảng Influencer Marketing Minet Asia</strong>
+            </div>
+            <p class="leader-bio">Anh cùng đội ngũ xây dựng hệ thống INPRO.vn từ chính nhu cầu vận hành doanh nghiệp mình.</p>
           </div>
         </div>
 
@@ -6189,7 +6748,11 @@ html,body{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; CEO</span>
             <h4>Vũ Bảo Thắng</h4>
-            <p class="leader-bio">Founder &amp; CEO Meta Ecom Group, Phó Ban Phát triển nguồn nhân lực VECOM. Meta Ecom nhận giải Vàng Media Agency of the Year tại TikTok Ad Awards 2024.</p>
+            <div class="leader-titles">
+              <strong>Founder &amp; CEO Meta Ecom Group</strong>
+              <strong>Phó ban phát triển nguồn nhân lực Vecom</strong>
+            </div>
+            <p class="leader-bio">Meta Ecom nhận giải Vàng Media Agency of the Year tại TikTok Ad Awards 2024.</p>
           </div>
         </div>
 
@@ -6201,7 +6764,10 @@ html,body{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; CTO</span>
             <h4>Nguyễn Xuân Bảo</h4>
-            <p class="leader-bio">CTO hệ sinh thái INPRO.vn, đồng hành trực tiếp cùng Đặng Thanh Định sau thời gian làm việc tại TOPICA; chuyển bài toán vận hành nhiều thương hiệu thành giải pháp công nghệ.</p>
+            <div class="leader-titles">
+              <strong>CTO phần mềm INPRO.vn</strong>
+            </div>
+            <p class="leader-bio">Đồng hành trực tiếp cùng Đặng Thanh Định sau thời gian làm việc tại TOPICA; chuyển bài toán vận hành nhiều thương hiệu thành giải pháp công nghệ.</p>
           </div>
         </div>
 
@@ -6213,7 +6779,12 @@ html,body{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; COO</span>
             <h4>Đào Anh Quân</h4>
-            <p class="leader-bio">Kỹ sư CNTT, học viên Thạc sĩ AI tại Đại học Bách khoa Hà Nội; có kinh nghiệm AI &amp; MarTech và triển khai Lark Suite cho doanh nghiệp TMĐT.</p>
+            <div class="leader-titles">
+              <strong>COO phần mềm INPRO.vn</strong>
+              <strong>Kỹ sư CNTT</strong>
+              <strong>Kinh nghiệm AI &amp; Martech và triển khai Lark Suite</strong>
+            </div>
+            <p class="leader-bio">Học viên Thạc sĩ AI tại Đại học Bách khoa Hà Nội, triển khai giải pháp cho doanh nghiệp TMĐT.</p>
           </div>
         </div>
       </div>
@@ -6295,7 +6866,7 @@ html,body{
                       <span class="ba-tag">Đa sàn &amp; KOC</span>
                     </div>
                     <h4>Thương hiệu NERMAN</h4>
-                    <p>Ngành hàng: Mỹ phẩm &amp; Chăm sóc nam giới</p>
+                    <p>Ngành hàng: Mỹ phẩm và chăm sóc nam giới</p>
                   </div>
                 </div>
 
@@ -6325,7 +6896,7 @@ html,body{
                       <div class="ba-state-pill is-after">
                         <svg class="ico"><use href="#i-check"/></svg> Cùng INPRO.vn
                       </div>
-                      <span class="ba-vsub is-after">★ Hiệu quả bứt phá</span>
+                      <span class="ba-vsub is-after">Hiệu quả bứt phá</span>
                     </div>
                     <ul class="ba-vlist is-after">
                       <li>
@@ -6359,7 +6930,7 @@ html,body{
                         <small>INPRO.vn OS · Case Study 01</small>
                         <b>Nerman · Đa sàn &amp; KOC</b>
                       </div>
-                      <span class="b-dev-badge">● LIVE 30s</span>
+                      <span class="b-dev-badge">LIVE 30s</span>
                     </div>
                     <div class="ba-stage-banner">
                       <div>
@@ -6414,7 +6985,7 @@ html,body{
                       <span class="ba-tag">Quản lý × Vận kho</span>
                     </div>
                     <h4>Thương hiệu MISTORY</h4>
-                    <p>Ngành hàng: Bán lẻ đa kênh</p>
+                    <p>Ngành hàng: Mỹ phẩm nữ giới gắn với Văn hóa Việt</p>
                   </div>
                 </div>
 
@@ -6443,7 +7014,7 @@ html,body{
                       <div class="ba-state-pill is-after">
                         <svg class="ico"><use href="#i-check"/></svg> Cùng INPRO.vn
                       </div>
-                      <span class="ba-vsub is-after">★ Hiệu quả bứt phá</span>
+                      <span class="ba-vsub is-after">Hiệu quả bứt phá</span>
                     </div>
                     <ul class="ba-vlist is-after">
                       <li>
@@ -6476,7 +7047,7 @@ html,body{
                         <small>INPRO.vn OS · Case Study 02</small>
                         <b>Mistory · Quản lý × Vận kho</b>
                       </div>
-                      <span class="b-dev-badge">● WMS LIVE</span>
+                      <span class="b-dev-badge">WMS LIVE</span>
                     </div>
                     <div class="ba-stage-banner">
                       <div>
@@ -6531,7 +7102,7 @@ html,body{
                       <span class="ba-tag">Tồn kho &amp; B2B</span>
                     </div>
                     <h4>LION BARTENDER</h4>
-                    <p>Ngành hàng: Nguyên liệu &amp; Dụng cụ pha chế</p>
+                    <p>Ngành hàng: Sản phẩm chăm sóc cá nhân nam giới</p>
                   </div>
                 </div>
 
@@ -6560,7 +7131,7 @@ html,body{
                       <div class="ba-state-pill is-after">
                         <svg class="ico"><use href="#i-check"/></svg> Cùng INPRO.vn
                       </div>
-                      <span class="ba-vsub is-after">★ Hiệu quả bứt phá</span>
+                      <span class="ba-vsub is-after">Hiệu quả bứt phá</span>
                     </div>
                     <ul class="ba-vlist is-after">
                       <li>
@@ -6593,7 +7164,7 @@ html,body{
                         <small>INPRO.vn OS · Case Study 03</small>
                         <b>Lion Bartender · Kho &amp; B2B</b>
                       </div>
-                      <span class="b-dev-badge">● B2B &amp; SKU</span>
+                      <span class="b-dev-badge">B2B &amp; SKU</span>
                     </div>
                     <div class="ba-stage-banner">
                       <div>
@@ -6648,7 +7219,7 @@ html,body{
                       <span class="ba-tag">Ads AI &amp; CSKH</span>
                     </div>
                     <h4>Thương hiệu MENOW</h4>
-                    <p>Ngành hàng: Làm đẹp &amp; Xu hướng</p>
+                    <p>Ngành hàng: Mỹ phẩm và làm đẹp nữ giới</p>
                   </div>
                 </div>
 
@@ -6677,7 +7248,7 @@ html,body{
                       <div class="ba-state-pill is-after">
                         <svg class="ico"><use href="#i-check"/></svg> Cùng INPRO.vn
                       </div>
-                      <span class="ba-vsub is-after">★ Hiệu quả bứt phá</span>
+                      <span class="ba-vsub is-after">Hiệu quả bứt phá</span>
                     </div>
                     <ul class="ba-vlist is-after">
                       <li>
@@ -6710,7 +7281,7 @@ html,body{
                         <small>INPRO.vn OS · Case Study 04</small>
                         <b>MENOW · Ads AI &amp; CSKH</b>
                       </div>
-                      <span class="b-dev-badge">● AI ACTIVE</span>
+                      <span class="b-dev-badge">AI ACTIVE</span>
                     </div>
                     <div class="ba-stage-banner">
                       <div>
@@ -6756,27 +7327,26 @@ html,body{
     <!-- Banner điều kiện chương trình dùng thử 30 ngày -->
     <div class="trial-banner-card rv">
       <div class="trial-banner-left">
+        <div class="trial-limit-pill"><i aria-hidden="true"></i> Chương trình hỗ trợ miễn phí dùng thử giới hạn trong 20 ngày kể từ hôm nay</div>
+        <br>
         <span class="section-tag">CHƯƠNG TRÌNH DÙNG THỬ MIỄN PHÍ 30 NGÀY</span>
-        <h2>30 ngày để đánh&nbsp;giá AI trên công&nbsp;việc của bạn</h2>
-        <p>Đăng ký dùng thử miễn phí 30 ngày nếu doanh nghiệp có <strong>doanh thu lớn hơn 3 tỷ đồng/tháng HOẶC số đơn lớn hơn 10.000 đơn/tháng</strong>, và <strong>đồng ý gửi góp ý về phần mềm khi kết thúc sử dụng</strong>.</p>
-        <div class="trial-sub-rule">
-          <svg class="ico"><use href="#i-check"/></svg>
-          <span>Chỉ cần vượt một ngưỡng. Các trường hợp khác: Liên hệ tư vấn.</span>
-        </div>
+        <h2>Dùng thử INPRO.vn miễn&nbsp;phí trong tháng 11/2026</h2>
+        <p>Cơ hội trải nghiệm INPRO có giới hạn, doanh nghiệp có thể đăng ký trải nghiệm INPRO miễn phí trong tháng 11 khi đáp ứng một trong hai tiêu chí sau:</p>
       </div>
 
       <div class="trial-banner-right">
         <div class="trial-cond-item">
           <i>1</i>
-          <span><strong>Điều kiện quy mô (HOẶC):</strong> Doanh thu &gt; 3 tỷ đồng/tháng HOẶC số đơn &gt; 10.000 đơn/tháng.</span>
+          <span><strong>Doanh thu trên 3 tỷ đồng/tháng.</strong></span>
         </div>
         <div class="trial-cond-item">
           <i>2</i>
-          <span><strong>Đồng hành cải tiến:</strong> Đồng ý gửi góp ý về phần mềm khi kết thúc sử dụng.</span>
+          <span><strong>Số lượng đơn hàng trên 10.000 đơn/tháng.</strong></span>
         </div>
-        <div class="trial-cond-item">
-          <i>3</i>
-          <span><strong>Lộ trình tư vấn riêng:</strong> Doanh nghiệp chưa vượt cả hai ngưỡng được hỗ trợ tư vấn riêng theo nhu cầu.</span>
+        <p class="trial-cond-foot">Kèm theo đó, doanh nghiệp đồng ý gửi phản hồi về phần mềm sau khi kết thúc thời gian trải nghiệm.</p>
+        <div class="trial-sub-rule">
+          <svg class="ico"><use href="#i-check"/></svg>
+          <span>Với các trường hợp chưa đáp ứng điều kiện trên, vui lòng liên hệ riêng để được tư vấn.</span>
         </div>
         <div class="trial-banner-actions">
           <a href="#register" data-flow="trial" class="btn btn-w">Đăng ký dùng thử miễn phí 30 ngày</a>
@@ -6795,11 +7365,11 @@ html,body{
       <div class="faq-list">
         <div class="faq-item open">
           <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="true">
-            <span>1. Chỉ vượt một ngưỡng có được đăng ký?</span>
+            <span>1. Chỉ đáp ứng một trong hai điều kiện có được đăng ký?</span>
             <span class="faq-q-ico">+</span>
           </button>
           <div class="faq-a">
-            Có. Doanh thu 2 tỷ nhưng 12.000 đơn/tháng vẫn đạt quy mô. Đúng 3 tỷ hoặc đúng 10.000 đơn chưa vượt ngưỡng tương ứng.
+            Có. Doanh thu 2 tỷ nhưng trên 10.000 đơn hàng/tháng (ví dụ 12.000 đơn/tháng) vẫn đáp ứng điều kiện. Mức đúng 3 tỷ hoặc đúng 10.000 đơn chưa vượt ngưỡng tương ứng.
           </div>
         </div>
 
@@ -6809,7 +7379,7 @@ html,body{
             <span class="faq-q-ico">+</span>
           </button>
           <div class="faq-a">
-            AI xử lý hoặc hỗ trợ từng bước. Nhân sự vẫn duyệt Ads, kiểm tra phản hồi và xử lý tình huống cần quyết định.
+            AI hỗ trợ xử lý từng công việc để giảm tải cho đội ngũ. Nhân sự vẫn duyệt quảng cáo, giám sát phản hồi và xử lý các tình huống cần quyết định chuyên môn.
           </div>
         </div>
 
@@ -6847,46 +7417,96 @@ html,body{
   </div>
 </section>
 
-<!-- SECTION 5: ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ 30 NGÀY & FORM 8 TRƯỜNG PHÂN LOẠI B2B -->
+<!-- SECTION 5A: KHÁCH HÀNG VÀ ĐỐI TÁC ĐÁNH GIÁ (3x2 GLASS GRID) -->
+<section id="testimonials" class="testi-sec">
+  <div class="wrap">
+    <div class="testi-head-wrap rv">
+      <span class="section-tag">TRẢI NGHIỆM THỰC TẾ TỪ DOANH NGHIỆP</span>
+      <h2>KHÁCH HÀNG VÀ ĐỐI&nbsp;TÁC ĐÁNH&nbsp;GIÁ</h2>
+    </div>
+
+    <div class="testi-grid">
+      <!-- Card 1: Đăng Bùi -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">ĐB</div>
+          <div class="testi-meta">
+            <h3>Đăng Bùi</h3>
+            <span>Founder Zenva</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Kinh doanh trên sàn TMĐT, những việc nhân sự mình tốn thời gian nhất thường là làm báo cáo, chạy quảng cáo và xử lý chăm sóc khách hàng thủ công. Khi dùng thử INPRO.vn, đội ngũ nhân sự mình nhàn hơn. Đội ngũ Ads và CSKH có thêm thời gian tập trung vào những việc quan trọng như tối ưu gian hàng, triển khai livestream và chăm sóc khách hàng tốt hơn.”</p>
+      </article>
+
+      <!-- Card 2: Nguyễn Minh Anh -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">MA</div>
+          <div class="testi-meta">
+            <h3>Nguyễn Minh Anh</h3>
+            <span>Giám đốc vận hành<br>Doanh nghiệp thương mại điện tử</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Trước đây, đội ngũ phải liên tục chuyển đổi giữa nhiều nền tảng để theo dõi đơn hàng và doanh số. Từ khi sử dụng thử INPRO.vn, việc tổng hợp thông tin thuận tiện hơn, giúp chúng tôi có cái nhìn rõ ràng hơn về hoạt động kinh doanh.”</p>
+      </article>
+
+      <!-- Card 3: Trần Quốc Huy -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">QH</div>
+          <div class="testi-meta">
+            <h3>Trần Quốc Huy</h3>
+            <span>Trưởng phòng Marketing<br>Thương hiệu hàng tiêu dùng</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Điều tôi đánh giá cao ở INPRO.vn là khả năng tổng hợp các chỉ số quảng cáo trên cùng một hệ thống. Đội ngũ dễ theo dõi hiệu quả chiến dịch và nhận diện những vấn đề cần kiểm tra, thay vì phải rà soát dữ liệu thủ công.”</p>
+      </article>
+
+      <!-- Card 4: Lê Thu Hà -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">TH</div>
+          <div class="testi-meta">
+            <h3>Lê Thu Hà</h3>
+            <span>Quản lý bộ phận Chăm sóc khách hàng<br>Nhà bán hàng đa sàn</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Khối lượng đánh giá và tin nhắn từ khách hàng khá lớn, đặc biệt trong các đợt cao điểm. INPRO giúp đội ngũ thuận tiện hơn trong việc theo dõi và xử lý phản hồi, hạn chế tình trạng bỏ sót những tương tác quan trọng.”</p>
+      </article>
+
+      <!-- Card 5: Phạm Hoàng Nam -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">HN</div>
+          <div class="testi-meta">
+            <h3>Phạm Hoàng Nam</h3>
+            <span>Trưởng nhóm KOL/KOC<br>Thương hiệu mỹ phẩm</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Việc quản lý booking KOL/KOC trước đây phụ thuộc khá nhiều vào bảng tính và trao đổi riêng lẻ. Khi các thông tin được tập trung hơn, team dễ theo dõi trạng thái hợp tác, lịch đăng và những đầu việc cần xử lý.”</p>
+      </article>
+
+      <!-- Card 6: Đỗ Thành Đạt -->
+      <article class="testi-card rv">
+        <div class="testi-user">
+          <div class="testi-avatar" aria-hidden="true">TĐ</div>
+          <div class="testi-meta">
+            <h3>Đỗ Thành Đạt</h3>
+            <span>CEO<br>Doanh nghiệp kinh doanh trực tuyến</span>
+          </div>
+        </div>
+        <p class="testi-quote">“Với vai trò điều hành, tôi cần nắm được tình hình kinh doanh mà không phải chờ đội ngũ tổng hợp báo cáo từ nhiều nguồn. INPRO giúp việc theo dõi các chỉ số quan trọng thuận tiện hơn, từ đó hỗ trợ tôi đưa ra quyết định kịp thời.”</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5B: ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ 30 NGÀY & FORM 8 TRƯỜNG PHÂN LOẠI B2B -->
 <section id="register" class="reg">
   <div class="reg-wrap rgrid">
     <div class="reg-left rv">
-      <h2>Đưa AI vào bài&nbsp;toán doanh&nbsp;nghiệp đang cần giải&nbsp;quyết</h2>
-      <p class="reg-lead">Để lại quy mô và nhu cầu để INPRO đối chiếu điều kiện, tư vấn và trao đổi việc dùng thử. Gửi form chưa đồng nghĩa tài khoản đã được kích hoạt.</p>
-
-      <div class="glass">
-        <div class="gc">
-          <div class="gc-icon-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-          </div>
-          <h3>Điều kiện quy mô theo HOẶC</h3>
-          <p>Doanh thu lớn hơn 3 tỷ đồng/tháng HOẶC số đơn lớn hơn 10.000 đơn/tháng. Chỉ cần vượt một ngưỡng.</p>
-        </div>
-
-        <div class="gc">
-          <div class="gc-icon-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
-          <h3>Xác nhận phạm vi trước kích hoạt</h3>
-          <p>Đội ngũ INPRO liên hệ đối chiếu điều kiện, thống nhất phạm vi dữ liệu kết nối và hướng dẫn triển khai.</p>
-        </div>
-
-        <div class="gc">
-          <div class="gc-icon-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-          <h3>Đồng hành &amp; góp ý cải tiến</h3>
-          <p>Khách tham gia dùng thử đồng ý gửi góp ý về phần mềm khi kết thúc sử dụng. Các trường hợp khác được tư vấn riêng.</p>
-        </div>
+      <div class="reg-mascot-card">
+        <img src="assets/7.png" alt="Mascot INPRO.vn" loading="lazy" width="960" height="1202">
       </div>
     </div>
 
@@ -6895,30 +7515,31 @@ html,body{
       <form id="form" class="reg-card lead-form" novalidate>
         <div id="fields" class="fields">
           <div class="reg-card-head">
-            <h3 class="reg-card-title">ĐĂNG KÝ DÙNG THỬ MIỄN PHÍ 30 NGÀY</h3>
+            <div class="reg-limit-banner"><i aria-hidden="true"></i> Giới hạn đăng ký trong 20 ngày kể từ hôm nay</div>
+            <h3 class="reg-card-title">ĐĂNG KÍ NHẬN ƯU ĐÃI THÁNG 11 NÀY</h3>
             <p class="reg-card-sub">Hoặc để lại thông tin để nhận tư vấn riêng theo nhu cầu doanh nghiệp</p>
           </div>
 
           <div class="rf-row-2">
             <div class="rf-field">
-              <label class="rf-label" for="f-name">1. Họ và tên <span>*</span></label>
+              <label class="rf-label" for="f-name">1. Họ và tên</label>
               <input id="f-name" type="text" name="name" required placeholder="Nhập họ và tên của bạn" class="rf-input" autocomplete="name">
             </div>
 
             <div class="rf-field">
-              <label class="rf-label" for="f-phone">2. Số điện thoại <span>*</span></label>
+              <label class="rf-label" for="f-phone">2. Số điện thoại</label>
               <input id="f-phone" type="tel" name="phone" required placeholder="Ví dụ: 0925376699" class="rf-input" inputmode="tel" autocomplete="tel">
             </div>
           </div>
 
           <div class="rf-row-2">
             <div class="rf-field">
-              <label class="rf-label" for="f-company">3. Doanh nghiệp / Thương hiệu <span>*</span></label>
+              <label class="rf-label" for="f-company">3. Doanh nghiệp / Thương hiệu</label>
               <input id="f-company" type="text" name="company" required placeholder="Tên doanh nghiệp hoặc thương hiệu bạn đang phụ trách" class="rf-input" autocomplete="organization">
             </div>
 
             <div class="rf-field">
-              <label class="rf-label" for="f-role">4. Vai trò của bạn <span>*</span></label>
+              <label class="rf-label" for="f-role">4. Vai trò của bạn</label>
               <select id="f-role" name="role" required class="rf-select">
                 <option value="" disabled selected>Chọn vai trò của bạn</option>
                 <option value="Chủ doanh nghiệp / Chủ thương hiệu / Nhà bán hàng">Chủ doanh nghiệp / Chủ thương hiệu / Nhà bán hàng</option>
@@ -6932,7 +7553,7 @@ html,body{
 
           <div class="rf-row-2">
             <div class="rf-field">
-              <label class="rf-label" for="f-revenue">5. Doanh thu mỗi tháng <span>*</span></label>
+              <label class="rf-label" for="f-revenue">5. Doanh thu mỗi tháng</label>
               <select id="f-revenue" name="revenue" required class="rf-select">
                 <option value="" disabled selected>Chọn mức doanh thu/tháng</option>
                 <option value="Dưới 1 tỷ">Dưới 1 tỷ</option>
@@ -6946,7 +7567,7 @@ html,body{
             </div>
 
             <div class="rf-field">
-              <label class="rf-label" for="f-orders">6. Số đơn mỗi tháng <span>*</span></label>
+              <label class="rf-label" for="f-orders">6. Số đơn mỗi tháng</label>
               <select id="f-orders" name="orders" required class="rf-select">
                 <option value="" disabled selected>Chọn mức số đơn/tháng</option>
                 <option value="Dưới 5.000">Dưới 5.000</option>
@@ -6960,20 +7581,20 @@ html,body{
           </div>
 
           <div class="rf-field">
-            <label class="rf-label">7. Nền tảng đang bán <small style="font-weight:600;color:var(--mut)">(Tùy chọn - có thể chọn nhiều)</small></label>
+            <label class="rf-label">7. Nền tảng đang bán <small style="font-weight:600;color:var(--mut)">(Tùy chọn, có thể chọn nhiều)</small></label>
             <div class="rf-platforms" role="group" aria-label="Nền tảng đang bán">
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="TikTok Shop"><span>TikTok Shop</span></label>
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Shopee"><span>Shopee</span></label>
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Lazada"><span>Lazada</span></label>
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Website"><span>Website</span></label>
-              <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Facebook / Zalo"><span>Facebook / Zalo</span></label>
+              <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Facebook / Fanpage"><span>Facebook / Fanpage</span></label>
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Kênh khác"><span>Kênh khác</span></label>
               <label class="rf-plat-pill"><input type="checkbox" name="platforms" value="Chưa rõ"><span>Chưa rõ</span></label>
             </div>
           </div>
 
           <div class="rf-field">
-            <label class="rf-label" for="f-need">8. Nhu cầu ưu tiên <span>*</span></label>
+            <label class="rf-label" for="f-need">8. Nhu cầu ưu tiên</label>
             <select id="f-need" name="need" required class="rf-select">
               <option value="" disabled selected>Chọn nhu cầu ưu tiên của doanh nghiệp</option>
               <option value="Kiểm soát chi phí và lợi nhuận">Kiểm soát chi phí và lợi nhuận</option>
@@ -6986,8 +7607,8 @@ html,body{
           </div>
 
           <label class="rf-check-box" for="f-feedback">
-            <input id="f-feedback" type="checkbox" name="feedback_consent" value="Đồng ý gửi góp ý">
-            <span>Tôi đồng ý gửi góp ý về phần mềm khi kết thúc sử dụng.</span>
+            <input id="f-feedback" type="checkbox" name="feedback_consent" value="Đồng ý gửi phản hồi">
+            <span>Tôi đồng ý gửi phản hồi về phần mềm sau khi kết thúc thời gian dùng thử.</span>
           </label>
 
           <p class="rf-privacy-note">
@@ -7007,9 +7628,9 @@ html,body{
           <div class="big"><svg class="ico"><use href="#i-check"/></svg></div>
           <span class="ok-status-badge" id="okStatusBadge">Đã ghi nhận thông tin</span>
           <h3 id="okTitle">INPRO đã nhận thông tin</h3>
-          <p class="ok-msg-body" id="okMessage">INPRO đã nhận đăng ký. Theo thông tin bạn cung cấp, doanh nghiệp đáp ứng điều kiện quy mô và bạn đã đồng ý gửi góp ý khi kết thúc sử dụng. Đội ngũ INPRO sẽ liên hệ trao đổi phạm vi dùng thử và việc kích hoạt. Tài khoản chưa được kích hoạt chỉ bằng việc gửi form.</p>
+          <p class="ok-msg-body" id="okMessage">INPRO đã nhận đăng ký. Theo thông tin bạn cung cấp, doanh nghiệp đáp ứng điều kiện quy mô và bạn đã đồng ý gửi phản hồi sau khi kết thúc thời gian dùng thử. Đội ngũ INPRO sẽ liên hệ trao đổi phạm vi dùng thử và việc kích hoạt. Tài khoản chưa được kích hoạt chỉ bằng việc gửi form.</p>
           <div class="ok-actions">
-            <a href="https://zalo.me/925376699" target="_blank" rel="noopener" class="btn btn-p" id="okNextBtn">Liên hệ tư vấn</a>
+            <a href="https://www.facebook.com/profile.php?id=61595587119025" data-fanpage-link target="_blank" rel="noopener" class="btn btn-p" id="okNextBtn">Nhắn tin Fanpage hỗ trợ</a>
             <button type="button" class="btn btn-o" onclick="resetLeadForm()">Cập nhật lại thông tin đăng ký</button>
           </div>
         </div>
@@ -7032,17 +7653,28 @@ html,body{
   </div>
 </div>
 
+<!-- SOCIAL PROOF REGISTRATION NOTIFICATION (Bottom-Left Corner) -->
+<div class="reg-toast" id="regToast" role="status" aria-live="polite">
+  <div class="reg-toast-avatar" id="regToastAvatar">MN</div>
+  <div class="reg-toast-body">
+    <strong class="reg-toast-title" id="regToastTitle">Anh Minh · Shop Mỹ phẩm (Hà Nội)</strong>
+    <span class="reg-toast-desc" id="regToastDesc">Vừa đăng ký dùng thử miễn phí 30 ngày</span>
+    <span class="reg-toast-time"><i aria-hidden="true"></i> <span id="regToastTime">2 phút trước</span></span>
+  </div>
+  <button type="button" class="reg-toast-close" onclick="dismissRegToast()" aria-label="Đóng thông báo">✕</button>
+</div>
+
 <!-- FLOATING CONTACT COLUMN (Desktop Bottom-Right) -->
 <div class="float-contact" id="floatContact">
-  <a href="https://zalo.me/925376699" target="_blank" rel="noopener" class="float-btn float-zalo" aria-label="Chat qua Zalo" title="Chat qua Zalo">
+  <a href="https://www.facebook.com/profile.php?id=61595587119025" data-fanpage-link target="_blank" rel="noopener" class="float-btn float-zalo" aria-label="Nhắn tin Fanpage" title="Nhắn tin Fanpage hỗ trợ">
     <span class="float-icon">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12.49 10.2722v-.4496h1.3467v6.3218h-.7704a.576.576 0 01-.5763-.5729l-.0006.0005a3.273 3.273 0 01-1.9372.6321c-1.8138 0-3.2844-1.4697-3.2844-3.2823 0-1.8125 1.4706-3.2822 3.2844-3.2822a3.273 3.273 0 011.9372.6321l.0006.0005zM6.9188 7.7896v.205c0 .3823-.051.6944-.2995 1.0605l-.03.0343c-.0542.0615-.1815.206-.2421.2843L2.024 14.8h4.8948v.7682a.5764.5764 0 01-.5767.5761H0v-.3622c0-.4436.1102-.6414.2495-.8476L4.8582 9.23H.1922V7.7896h6.7266zm8.5513 8.3548a.4805.4805 0 01-.4803-.4798v-7.875h1.4416v8.3548H15.47zM20.6934 9.6C22.52 9.6 24 11.0807 24 12.9044c0 1.8252-1.4801 3.306-3.3066 3.306-1.8264 0-3.3066-1.4808-3.3066-3.306 0-1.8237 1.4802-3.3044 3.3066-3.3044zm-10.1412 5.253c1.0675 0 1.9324-.8645 1.9324-1.9312 0-1.065-.865-1.9295-1.9324-1.9295s-1.9324.8644-1.9324 1.9295c0 1.0667.865 1.9312 1.9324 1.9312zm10.1412-.0033c1.0737 0 1.945-.8707 1.945-1.9453 0-1.073-.8713-1.9436-1.945-1.9436-1.0753 0-1.945.8706-1.945 1.9453 0 1.0746.8697 1.9453 1.945 1.9453z"/>
+        <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.936 1.444 5.537 3.702 7.205V22l3.375-1.852c.9.25 1.855.384 2.923.384 5.523 0 10-4.145 10-9.243C22 6.145 17.523 2 12 2zm1.008 12.435l-2.548-2.718-4.97 2.718 5.468-5.804 2.61 2.718 4.908-2.718-5.468 5.804z"/>
       </svg>
     </span>
     <span class="float-info">
       <span class="float-sub">Hỗ trợ trực tuyến</span>
-      <span class="float-main">Chat qua Zalo</span>
+      <span class="float-main">Nhắn tin Fanpage</span>
     </span>
   </a>
 
@@ -7063,8 +7695,9 @@ html,body{
     <svg class="ico"><use href="#i-phone"/></svg>
     <span>Gọi tư vấn</span>
   </a>
-  <a href="https://zalo.me/925376699" target="_blank" rel="noopener" class="mbar-btn mbar-zalo" aria-label="Chat Zalo tư vấn">
-    <span>Zalo</span>
+  <a href="https://www.facebook.com/profile.php?id=61595587119025" data-fanpage-link target="_blank" rel="noopener" class="mbar-btn mbar-zalo" aria-label="Nhắn tin Fanpage tư vấn">
+    <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;flex:none" aria-hidden="true"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.936 1.444 5.537 3.702 7.205V22l3.375-1.852c.9.25 1.855.384 2.923.384 5.523 0 10-4.145 10-9.243C22 6.145 17.523 2 12 2zm1.008 12.435l-2.548-2.718-4.97 2.718 5.468-5.804 2.61 2.718 4.908-2.718-5.468 5.804z"/></svg>
+    <span>Fanpage</span>
   </a>
   <a href="#register" class="mbar-btn mbar-cta">
     <span>Dùng thử 30 ngày</span>
@@ -7080,7 +7713,7 @@ html,body{
         <a href="#top" class="footer-logo" aria-label="INPRO.vn">
           <img src="assets/inpro-ngang.png" alt="INPRO.vn" width="168" height="26">
         </a>
-        <div class="fname">INPRO.vn – Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận</div>
+        <div class="fname">INPRO.vn: Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận</div>
         <p><b>Tăng lời, vững lãi.</b> Earn More. Keep More. Increase Profit.</p>
         <div class="ct"><svg class="ico"><use href="#i-pin"/></svg><span>111 Cù Chính Lan, Phương Liệt, Hà Nội</span></div>
         <div class="ct"><svg class="ico"><use href="#i-phone"/></svg><a href="tel:0925376699">0925 376 699 (Hotline)</a></div>
@@ -7101,7 +7734,7 @@ html,body{
         <a class="flink" href="#register">Đăng ký dùng thử miễn phí 30 ngày</a>
       </div>
     </div>
-    <div class="copy">© 2026 INPRO.vn – Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận. All rights reserved.</div>
+    <div class="copy">© 2026 INPRO.vn: Phần mềm AI hỗ trợ nhà bán hàng tăng trưởng lợi nhuận. All rights reserved.</div>
   </div>
 </footer>
 
@@ -7287,6 +7920,81 @@ if(phoneInput){
   });
 }
 
+// =========================================================================
+// CẤU HÌNH ĐƯỜNG DẪN NHẮN TIN FANPAGE (FACEBOOK MESSENGER)
+// Thay link bên dưới bằng đường dẫn Fanpage/Messenger của bạn
+// Ví dụ: 'https://m.me/TenFanpageCuaBan' hoặc 'https://www.facebook.com/TenFanpageCuaBan'
+// =========================================================================
+const FANPAGE_CHAT_URL = 'https://www.facebook.com/profile.php?id=61595587119025';
+document.querySelectorAll('[data-fanpage-link]').forEach(el => {
+  el.setAttribute('href', FANPAGE_CHAT_URL);
+});
+
+// =========================================================================
+// THÔNG BÁO ĐĂNG KÝ GÓC TRÁI BÊN DƯỚI MÀN HÌNH (SOCIAL PROOF TOAST)
+// Đặt ENABLE_REG_TOAST = false nếu muốn tắt hoàn toàn thông báo này
+// =========================================================================
+const ENABLE_REG_TOAST = true;
+const REG_TOAST_DATA = [
+  { avatar: 'MN', title: 'Anh Minh · Shop Mỹ phẩm (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: 'Vừa xong' },
+  { avatar: 'LH', title: 'Chị Lan Hương · Thời trang (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: 'Vừa xong' },
+  { avatar: 'HQ', title: 'Anh Hoàng Quân · Gia dụng (Đà Nẵng)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '1 phút trước' },
+  { avatar: 'TT', title: 'Chị Thanh Thảo · Mẹ & Bé (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '1 phút trước' },
+  { avatar: 'ĐK', title: 'Anh Đức Khôi · Phụ kiện (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '2 phút trước' },
+  { avatar: 'NP', title: 'Chị Ngọc Phương · Chăm sóc da (Hải Phòng)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '2 phút trước' },
+  { avatar: 'TA', title: 'Anh Tuấn Anh · Nam trang (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '3 phút trước' },
+  { avatar: 'ML', title: 'Chị Mỹ Linh · Mỹ phẩm thiên nhiên (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '3 phút trước' },
+  { avatar: 'VH', title: 'Anh Việt Hoàng · Đồ thể thao (Bắc Ninh)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '4 phút trước' },
+  { avatar: 'KL', title: 'Chị Khánh Ly · Nước hoa & Làm đẹp (Hà Nội)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '4 phút trước' },
+  { avatar: 'QT', title: 'Anh Quốc Trung · Chăm sóc cá nhân (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '5 phút trước' },
+  { avatar: 'HT', title: 'Chị Huyền Trang · Thời trang thiết kế (Đà Nẵng)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '5 phút trước' },
+  { avatar: 'ĐN', title: 'Anh Đình Nam · Thực phẩm sức khỏe (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '6 phút trước' },
+  { avatar: 'BA', title: 'Chị Bảo Ngọc · Chăm sóc tóc (Cần Thơ)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '6 phút trước' },
+  { avatar: 'MP', title: 'Anh Minh Phúc · Gia dụng thông minh (Bình Dương)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '7 phút trước' },
+  { avatar: 'TN', title: 'Chị Tuyết Nhung · Mỹ phẩm Hàn Quốc (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '8 phút trước' },
+  { avatar: 'GH', title: 'Anh Gia Huy · Giày dép & Túi xách (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '8 phút trước' },
+  { avatar: 'DL', title: 'Chị Diệu Linh · Đồ dùng Mẹ & Bé (Nghệ An)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '9 phút trước' },
+  { avatar: 'TH', title: 'Anh Trọng Hiếu · Chăm sóc nam giới (Hà Nội)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '10 phút trước' },
+  { avatar: 'KN', title: 'Chị Kim Ngân · Thời trang nữ (Đồng Nai)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '11 phút trước' },
+  { avatar: 'ĐL', title: 'Anh Đăng Long · Phụ kiện công nghệ (TP.HCM)', desc: 'Vừa đăng ký dùng thử miễn phí 30 ngày', time: '12 phút trước' },
+  { avatar: 'HM', title: 'Chị Hà My · Mỹ phẩm & Skincare (Khánh Hòa)', desc: 'Vừa đăng ký tư vấn giải pháp INPRO.vn', time: '14 phút trước' }
+];
+let regToastDismissed = false;
+let regToastIdx = 0;
+function dismissRegToast(){
+  regToastDismissed = true;
+  const t = document.getElementById('regToast');
+  if(t) t.classList.remove('is-visible');
+}
+(function initRegToast(){
+  if(!ENABLE_REG_TOAST) return;
+  const toastEl = document.getElementById('regToast');
+  const avEl = document.getElementById('regToastAvatar');
+  const tiEl = document.getElementById('regToastTitle');
+  const deEl = document.getElementById('regToastDesc');
+  const tmEl = document.getElementById('regToastTime');
+  if(!toastEl) return;
+
+  const showNextToast = () => {
+    if(regToastDismissed) return;
+    const item = REG_TOAST_DATA[regToastIdx % REG_TOAST_DATA.length];
+    regToastIdx++;
+    if(avEl) avEl.textContent = item.avatar;
+    if(tiEl) tiEl.textContent = item.title;
+    if(deEl) deEl.textContent = item.desc;
+    if(tmEl) tmEl.textContent = item.time;
+    toastEl.classList.add('is-visible');
+    setTimeout(() => {
+      toastEl.classList.remove('is-visible');
+    }, 4000);
+  };
+
+  setTimeout(() => {
+    showNextToast();
+    setInterval(showNextToast, 5800);
+  }, 1500);
+})();
+
 // FAQ Accordion Toggle
 function toggleFaq(btn){
   const item = btn.closest('.faq-item');
@@ -7315,7 +8023,7 @@ function resetLeadForm(){
   if(fl) fl.style.display = 'block';
 }
 
-// Evaluate Scale Condition strictly by OR rule (> 3 tỷ OR > 10.000 đơn)
+// Evaluate Scale Condition strictly by 1-of-2 rule (> 3 tỷ OR > 10.000 đơn)
 function evaluateScaleEligibility(revenueVal, ordersVal){
   const revPassSet = new Set(['Trên 3 tỷ đến 5 tỷ', 'Trên 5 tỷ đến 10 tỷ', 'Trên 10 tỷ']);
   const ordPassSet = new Set(['Trên 10.000 đến 30.000', 'Trên 30.000']);
@@ -7403,7 +8111,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
 
   // If user clicked "Đăng ký dùng thử miễn phí 30 ngày" and has not checked feedback commitment
   if(submitMode === 'trial' && !feedbackChecked && scaleResult !== 'CONSULTATION_ONLY'){
-    showError('Vui lòng xác nhận đồng ý gửi góp ý để đăng ký dùng thử, hoặc chọn ‘Liên hệ tư vấn’.');
+    showError('Vui lòng xác nhận đồng ý gửi phản hồi để đăng ký dùng thử, hoặc chọn Liên hệ tư vấn.');
     fm.elements['feedback_consent']?.focus();
     return;
   }
@@ -7418,7 +8126,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
     finalCategory = 'Khách phù hợp theo thông tin đăng ký';
     statusBadgeTxt = 'Đáp ứng điều kiện theo khai báo';
     statusTitleTxt = 'INPRO đã nhận đăng ký dùng thử 30 ngày';
-    statusMsgTxt = 'INPRO đã nhận đăng ký. Theo thông tin bạn cung cấp, doanh nghiệp đáp ứng điều kiện quy mô và bạn đã đồng ý gửi góp ý khi kết thúc sử dụng. Đội ngũ INPRO sẽ liên hệ trao đổi phạm vi dùng thử và việc kích hoạt. Tài khoản chưa được kích hoạt chỉ bằng việc gửi form.';
+    statusMsgTxt = 'INPRO đã nhận đăng ký. Theo thông tin bạn cung cấp, doanh nghiệp đáp ứng điều kiện quy mô và bạn đã đồng ý gửi phản hồi sau khi kết thúc thời gian dùng thử. Đội ngũ INPRO sẽ liên hệ trao đổi phạm vi dùng thử và việc kích hoạt. Tài khoản chưa được kích hoạt chỉ bằng việc gửi form.';
   } else if(scaleResult === 'NEEDS_VERIFICATION' || (scaleResult === 'QUALIFIED_SCALE' && submitMode === 'consult')){
     finalCategory = 'Khách cần xác minh';
     statusBadgeTxt = 'Cần xác minh & đối chiếu';
@@ -7439,12 +8147,12 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
     monthly_orders: ordersVal,
     platforms: platformsStr,
     need: needVal,
-    feedback_consent: feedbackChecked ? 'Đồng ý gửi góp ý' : 'Chưa chọn',
+    feedback_consent: feedbackChecked ? 'Đồng ý gửi phản hồi' : 'Chưa chọn',
     submit_action: submitMode === 'trial' ? 'Đăng ký dùng thử miễn phí 30 ngày' : 'Liên hệ tư vấn',
     program_eligibility: finalCategory,
     company_size: 'DT: ' + revenueVal + ' | Đơn: ' + ordersVal,
     consult_time: needVal,
-    message: '[' + finalCategory + '] DN/Brand: ' + companyVal + ' | Vai trò: ' + roleVal + ' | DT: ' + revenueVal + ' | Đơn: ' + ordersVal + ' | Kênh: ' + platformsStr + ' | Nhu cầu: ' + needVal + ' | Góp ý: ' + (feedbackChecked ? 'Đồng ý' : 'Không'),
+    message: '[' + finalCategory + '] DN/Brand: ' + companyVal + ' | Vai trò: ' + roleVal + ' | DT: ' + revenueVal + ' | Đơn: ' + ordersVal + ' | Kênh: ' + platformsStr + ' | Nhu cầu: ' + needVal + ' | Phản hồi: ' + (feedbackChecked ? 'Đồng ý' : 'Không'),
     industry: companyVal + ' (' + roleVal + ')',
     needs: [needVal],
     utm: {
@@ -7501,7 +8209,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
     .catch(() => {
       if(btnTrial){ btnTrial.disabled = false; btnTrial.textContent = 'Đăng ký dùng thử miễn phí 30 ngày'; }
       if(btnConsult){ btnConsult.disabled = false; btnConsult.textContent = 'Liên hệ tư vấn'; }
-      showError('Kết nối mạng gián đoạn. Vui lòng thử lại hoặc liên hệ Zalo / Hotline 0925 376 699.');
+      showError('Kết nối mạng gián đoạn. Vui lòng thử lại hoặc nhắn tin Fanpage / gọi Hotline 0925 376 699.');
     });
 }));
 
@@ -7531,7 +8239,7 @@ document.querySelectorAll('form.lead-form').forEach(fm => fm.addEventListener('s
 })();
 
 // Vietnamese compound-word typography engine (anti-widow & compound word binder)
-var VN_WORDS = ('giới thiệu|thiết kế|cam kết|cải thiện|đội ngũ|phù hợp|hỗ trợ|miễn phí|thành công|tiếp cận|tương lai|chuyên gia|chuyên sâu|chuyên biệt|thiết bị|nhanh chóng|rõ ràng|chính xác|lựa chọn|ứng dụng|sử dụng|triển khai|chủ động|hoạt động|phương pháp|sáng lập|lĩnh vực|chủ tịch|kết quả|cụ thể|dòng tiền|toàn diện|doanh nghiệp|doanh thu|doanh số|lợi nhuận|quản lý|quản trị|vận hành|vận kho|hiệu quả|hiệu suất|thương hiệu|nhân sự|kinh nghiệm|kinh doanh|dữ liệu|thông tin|thông minh|tri thức|hệ thống|hệ sinh thái|sản phẩm|chiến dịch|quảng cáo|ngân sách|nền tảng|tự động|tối ưu|đơn hàng|khách hàng|bán hàng|thị trường|đầu tư|xây dựng|phát triển|phát hiện|biến động|giải pháp|đề xuất|tỷ lệ|chuyển đổi|phân loại|phân bổ|theo dõi|kiểm soát|tính toán|nguồn tiền|nguồn lực|mục tiêu|báo cáo|định kỳ|hạng mục|chi tiết|đối chiếu|đối tác|giai đoạn|nhân viên|thiết lập|tổng hợp|tiến độ|nhà phân phối|đại lý|bán sỉ|quy trình|xử lý|giao nhận|mở rộng|mạng lưới|phân tích|thông qua|chỉ số|xác định|giá trị|thực tế|mang lại|nâng cao|năng lực|điều hành|quyết định|kịp thời|cơ sở|nhìn nhận|phân mảnh|phán đoán|nguyên nhân|kỳ vọng|chuẩn hóa|chuẩn hoá|lưu giữ|nội bộ|phụ thuộc|cá nhân|kế thừa|bền vững|đào tạo|chuyển giao|thực chiến|khó khăn|vấn đề|tăng trưởng|gia tăng|tiết kiệm|chi phí|năng suất|cải tiến|liên tục|hằng ngày|mỗi ngày|tích lũy|học hỏi|tập trung|đồng bộ|nhất quán|hoạch định|chiến lược|tổ chức|linh hoạt|hoàn thiện|đồng hành|thao tác|thủ công|thời gian|hợp lý|đa nhiệm|tài chính|kế toán|đối soát|giao dịch|trực quan|đánh giá|cài đặt|phân quyền|người dùng|tùy chỉnh|truyền thông|hợp tác|lịch sử|tương tác|chăm sóc|tồn kho|xuất nhập|luân chuyển|hàng hóa|phần mềm|trải nghiệm|đăng ký|tư vấn|ngành hàng|nhu cầu|quan tâm|tích hợp|bảo mật|lãnh đạo|việt nam|đông nam á|nhà quản lý|nhà bán hàng|thực hiện|hạn chế|thất thoát|nhận diện|tình hình|bứt phá|tìm hiểu|wave picking|pick list|full suite|ra quyết định').split('|').sort((a,b)=>b.length-a.length);
+var VN_WORDS = ('giới thiệu|thiết kế|cam kết|cải thiện|đội ngũ|phù hợp|hỗ trợ|miễn phí|thành công|tiếp cận|tương lai|chuyên gia|chuyên sâu|chuyên biệt|thiết bị|nhanh chóng|rõ ràng|chính xác|lựa chọn|ứng dụng|sử dụng|triển khai|chủ động|hoạt động|phương pháp|sáng lập|lĩnh vực|chủ tịch|kết quả|cụ thể|dòng tiền|toàn diện|doanh nghiệp|doanh thu|doanh số|lợi nhuận|quản lý|quản trị|vận hành|vận kho|hiệu quả|hiệu suất|thương hiệu|nhân sự|kinh nghiệm|kinh doanh|dữ liệu|thông tin|thông minh|tri thức|hệ thống|hệ sinh thái|sản phẩm|chiến dịch|quảng cáo|ngân sách|nền tảng|tự động|tối ưu|đơn hàng|khách hàng|bán hàng|thị trường|đầu tư|xây dựng|phát triển|phát hiện|biến động|giải pháp|đề xuất|tỷ lệ|chuyển đổi|phân loại|phân bổ|theo dõi|kiểm soát|tính toán|nguồn tiền|nguồn lực|mục tiêu|báo cáo|định kỳ|hạng mục|chi tiết|đối chiếu|đối tác|giai đoạn|nhân viên|thiết lập|tổng hợp|tiến độ|nhà phân phối|đại lý|bán sỉ|quy trình|xử lý|giao nhận|mở rộng|mạng lưới|phân tích|thông qua|chỉ số|xác định|giá trị|thực tế|mang lại|nâng cao|năng lực|điều hành|quyết định|kịp thời|cơ sở|nhìn nhận|phân mảnh|phán đoán|nguyên nhân|kỳ vọng|chuẩn hóa|chuẩn hoá|lưu giữ|nội bộ|phụ thuộc|cá nhân|kế thừa|bền vững|đào tạo|chuyển giao|thực chiến|khó khăn|vấn đề|tăng trưởng|gia tăng|tiết kiệm|chi phí|năng suất|cải tiến|liên tục|hằng ngày|mỗi ngày|tích lũy|học hỏi|tập trung|đồng bộ|nhất quán|hoạch định|chiến lược|tổ chức|linh hoạt|hoàn thiện|đồng hành|thao tác|thủ công|thời gian|hợp lý|đa nhiệm|tài chính|kế toán|đối soát|giao dịch|trực quan|đánh giá|cài đặt|phân quyền|người dùng|tùy chỉnh|truyền thông|hợp tác|lịch sử|tương tác|chăm sóc|tồn kho|xuất nhập|luân chuyển|hàng hóa|phần mềm|trải nghiệm|đăng ký|tư vấn|ngành hàng|nhu cầu|quan tâm|tích hợp|bảo mật|lãnh đạo|việt nam|đông nam á|nhà quản lý|nhà bán hàng|thực hiện|hạn chế|thất thoát|nhận diện|tình hình|bứt phá|tìm hiểu|wave picking|pick list|full suite|ra quyết định|dùng thử|góp ý|lợi nhuận đóng góp|phí sàn|giá vốn|tạm tính|ứng viên|thương lượng|người phụ trách|nhật ký|xác minh|tài khoản|kích hoạt|đầu việc|nhập tay|chốt đơn|đa kênh|tự động hóa|booking koc').split('|').sort((a,b)=>b.length-a.length);
 var VN_L = 'A-Za-z0-9À-ỹ';
 var VN_RE = new RegExp('(^|[^' + VN_L + '])(' + VN_WORDS.join('|') + ')(?![' + VN_L + '])', 'gi');
 function vnBind(s){
@@ -7543,7 +8251,7 @@ function lastTwo(s){
 }
 (function(){
   const skip = /^(SCRIPT|STYLE|OPTION|TEXTAREA|SELECT|NOSCRIPT)$/;
-  const lastSel = '.pain-card p,.pillar-list li span,.x100-info p,.story-content p,.ba-col,.lead,.reg-lead,.gc p,.tool-info p,.sme-banner p,.pr .d';
+  const lastSel = '.pain-card p,.b-pain-card p,.pillar-list li span,.b-pdetail-list li span,.b-halo-text p,.eco-vault-lead,.eco-kpi-lead,.hero-cond-note,.leader-bio,.trial-banner-left p,.trial-cond-item span,.faq-q span,.faq-a,.x100-info p,.story-content p,.ba-col,.lead,.reg-lead,.gc p,.tool-info p,.sme-banner p,.pr .d';
   const lastNodes = new Set();
   document.querySelectorAll(lastSel).forEach(el => {
     const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
@@ -7569,7 +8277,7 @@ const X100_DATA = [
     img: 'assets/man-hinh-realtime.jpg',
     sub: 'INPRO.vn OS · KIỂM SOÁT LỢI NHUẬN 01 / 04',
     title: '01 · Theo dõi lợi nhuận đóng góp',
-    badge: '● LỢI NHUẬN ĐÓNG GÓP',
+    badge: 'LỢI NHUẬN ĐÓNG GÓP',
     bannerLabel: 'Kết nối Doanh số · Giá vốn · Phí sàn · Ads · KOC',
     desc: 'Theo dõi lợi nhuận đóng góp dựa trên doanh thu và chi phí ghi nhận.',
     m1Label: 'CƠ CẤU CHI PHÍ GHI NHẬN',
@@ -7585,7 +8293,7 @@ const X100_DATA = [
     img: 'assets/case-nerman.png',
     sub: 'INPRO.vn OS · KIỂM SOÁT LỢI NHUẬN 02 / 04',
     title: '02 · Minh bạch độ phủ dữ liệu & đối soát',
-    badge: '● ĐỐI SOÁT TIỀN VỀ',
+    badge: 'ĐỐI SOÁT TIỀN VỀ',
     bannerLabel: 'Đối soát số hệ thống · Số sàn chốt · Số về ví',
     desc: 'Báo cáo thể hiện mức độ đầy đủ của giá vốn, phí sàn và phần còn tạm tính.',
     m1Label: 'MỨC ĐỘ ĐẦY ĐỦ DỮ LIỆU',
@@ -7601,7 +8309,7 @@ const X100_DATA = [
     img: 'assets/case-lion-bartender.png',
     sub: 'INPRO.vn OS · KIỂM SOÁT LỢI NHUẬN 03 / 04',
     title: '03 · Phân quyền theo vai trò & thương hiệu',
-    badge: '● PHÂN QUYỀN RÕ RÀNG',
+    badge: 'PHÂN QUYỀN RÕ RÀNG',
     bannerLabel: 'Quản trị theo vai trò, thương hiệu & chức năng',
     desc: 'Phân quyền theo vai trò, thương hiệu và chức năng; theo dõi người phụ trách.',
     m1Label: 'CẤP QUYỀN TRUY CẬP',
@@ -7617,7 +8325,7 @@ const X100_DATA = [
     img: 'assets/case-menow.png',
     sub: 'INPRO.vn OS · KIỂM SOÁT LỢI NHUẬN 04 / 04',
     title: '04 · Lưu lịch sử & kế thừa khi thay người',
-    badge: '● KẾ THỪA VẬN HÀNH',
+    badge: 'KẾ THỪA VẬN HÀNH',
     bannerLabel: 'Tập trung dữ liệu & lịch sử hợp tác trên hệ thống',
     desc: 'Lịch sử hợp tác, nội dung, thanh toán và công việc được lưu để đội ngũ kế thừa.',
     m1Label: 'LƯU TRỮ TẬP TRUNG',
@@ -7669,16 +8377,19 @@ function highlightX100(idx){
   setTxt('x100ChipBotSub', d.chipBotSub);
 }
 
+let x100ManualClickUntil = 0;
 function scrollToX100Step(idx){
+  x100ManualClickUntil = Date.now() + 900;
   highlightX100(idx);
   const track = document.getElementById('x100ScrollTrack');
   const fill = document.getElementById('x100RailFill');
   if(fill) fill.style.height = ((idx + 1) * 25) + '%';
-  if(window.innerWidth <= 1080) return;
   if(!track) return;
-  const scrollable = track.offsetHeight - window.innerHeight;
+  const stickyBox = track.querySelector('.x100-sticky-box');
+  const topOffset = window.innerWidth <= 768 ? 66 : 74;
+  const boxH = stickyBox ? stickyBox.offsetHeight : window.innerHeight * 0.72;
+  const scrollable = track.offsetHeight - boxH - 16;
   if(scrollable > 60){
-    const topOffset = window.innerWidth <= 768 ? 64 : 78;
     const trackTop = track.getBoundingClientRect().top + window.scrollY - topOffset;
     const targetY = trackTop + (idx + 0.15) * (scrollable / 4);
     window.scrollTo({ top: targetY, behavior: 'smooth' });
@@ -7689,23 +8400,26 @@ function scrollToX100Step(idx){
   const track = document.getElementById('x100ScrollTrack');
   const fill = document.getElementById('x100RailFill');
   if(!track) return;
-  window.addEventListener('scroll', () => {
-    if(window.innerWidth <= 1080) return;
+  const onScrollX100 = () => {
+    if(Date.now() < x100ManualClickUntil) return;
     const rect = track.getBoundingClientRect();
-    const scrollable = track.offsetHeight - window.innerHeight;
+    const stickyBox = track.querySelector('.x100-sticky-box');
+    const topOffset = window.innerWidth <= 768 ? 66 : 74;
+    const boxH = stickyBox ? stickyBox.offsetHeight : window.innerHeight * 0.72;
+    const scrollable = track.offsetHeight - boxH - 16;
     if(scrollable > 60){
-      const topOffset = window.innerWidth <= 768 ? 64 : 78;
       const scrolled = -rect.top + topOffset;
       if(scrolled < -120 || scrolled > scrollable + 240) return;
       const clamped = Math.max(0, Math.min(scrollable, scrolled));
       const ratio = clamped / scrollable;
       const stepIdx = Math.min(3, Math.floor(ratio * 4));
-      if(fill) fill.style.height = Math.max(15, Math.min(100, ratio * 100)) + '%';
+      if(fill) fill.style.height = Math.max(25, Math.min(100, ratio * 100)) + '%';
       if(stepIdx !== currentX100Idx){
         highlightX100(stepIdx);
       }
     }
-  }, { passive: true });
+  };
+  window.addEventListener('scroll', onScrollX100, { passive: true });
 })();
 
 // Section 3C: Brand Case Studies Horizontal Peek Carousel & Slidebar
