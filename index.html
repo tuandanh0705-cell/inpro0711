@@ -4420,7 +4420,7 @@ body{
   box-shadow:0 24px 56px rgba(24,35,61,.18), 0 0 0 1px rgba(147,51,234,.18) !important;
 }
 
-/* Leader card: Role & Name centered, Titles & Bio below divider flush-left */
+/* Leader card: Role & Name centered, Titles & Bio below divider flush-left and continuous */
 .leader-card{
   align-items:stretch !important;
 }
@@ -4437,34 +4437,20 @@ body{
   width:100%;
   text-align:center !important;
 }
-.leader-titles{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:4px;
-  margin-top:8px;
-  padding-top:8px;
-  border-top:1px solid var(--line);
-  text-align:left;
-}
-.leader-titles strong{
-  display:block;
-  width:100%;
-  font-size:13.5px;
-  font-weight:800;
-  color:var(--navy);
-  line-height:1.4;
-  text-align:left;
-}
 .leader-info p.leader-bio{
   width:100%;
   font-size:13.5px;
   font-weight:500;
   color:var(--mut);
-  line-height:1.55;
-  margin-top:6px;
+  line-height:1.58;
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px solid var(--line);
   text-align:left;
+}
+.leader-info p.leader-bio strong{
+  color:var(--navy);
+  font-weight:800;
 }
 
 /* SECTION: CHƯƠNG TRÌNH DÙNG THỬ 30 NGÀY & FAQ (#trial-faq) */
@@ -5451,39 +5437,31 @@ nav{
     display:block !important;
   }
   .leaders-grid{
-    grid-template-columns:repeat(2,1fr) !important;
-    gap:10px !important;
+    grid-template-columns:1fr !important;
+    gap:18px !important;
   }
   .leader-card{
-    border-radius:16px !important;
+    border-radius:20px !important;
+    padding:12px 12px 18px !important;
   }
   .leader-info{
-    padding:10px 10px 12px !important;
+    padding:12px 10px 4px !important;
   }
   .leader-role{
-    font-size:9px !important;
-    padding:3px 7px !important;
-    letter-spacing:.02em !important;
-    margin-bottom:5px !important;
+    font-size:11px !important;
+    padding:4px 10px !important;
+    letter-spacing:.03em !important;
+    margin-bottom:6px !important;
   }
   .leader-info h4{
-    font-size:13.5px !important;
-    line-height:1.25 !important;
-  }
-  .leader-titles{
-    margin-top:6px !important;
-    padding-top:6px !important;
-    gap:3px !important;
-  }
-  .leader-titles strong{
-    font-size:11.5px !important;
-    line-height:1.38 !important;
+    font-size:18px !important;
+    line-height:1.28 !important;
   }
   .leader-info p.leader-bio{
-    font-size:11.5px !important;
-    line-height:1.42 !important;
-    margin-top:5px !important;
-    padding-top:0 !important;
+    font-size:13.5px !important;
+    line-height:1.56 !important;
+    margin-top:8px !important;
+    padding-top:8px !important;
   }
 
   /* 6. Trial Banner & FAQ (#trial-faq) & Registration Form (#register) Mobile-First */
@@ -6785,11 +6763,7 @@ nav{
           <div class="leader-info">
             <span class="leader-role">FOUNDER &amp; CHAIRMAN</span>
             <h4>Đặng Thanh Định</h4>
-            <div class="leader-titles">
-              <strong>Chủ tịch Nerman</strong>
-              <strong>Nhà sáng lập nền tảng Influencer Marketing Minet Asia</strong>
-            </div>
-            <p class="leader-bio">Anh cùng đội ngũ xây dựng hệ thống INPRO.vn từ chính nhu cầu vận hành doanh nghiệp mình.</p>
+            <p class="leader-bio"><strong>Chủ tịch Nerman, Nhà sáng lập nền tảng Influencer Marketing Minet Asia.</strong> Anh cùng đội ngũ xây dựng hệ thống INPRO.vn từ chính nhu cầu vận hành doanh nghiệp mình.</p>
           </div>
         </div>
 
@@ -6801,11 +6775,7 @@ nav{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; CEO</span>
             <h4>Vũ Bảo Thắng</h4>
-            <div class="leader-titles">
-              <strong>Founder &amp; CEO Meta Ecom Group</strong>
-              <strong>Phó ban phát triển nguồn nhân lực Vecom</strong>
-            </div>
-            <p class="leader-bio">Meta Ecom nhận giải Vàng Media Agency of the Year tại TikTok Ad Awards 2024.</p>
+            <p class="leader-bio"><strong>Founder &amp; CEO Meta Ecom Group, Phó ban phát triển nguồn nhân lực Vecom.</strong> Meta Ecom nhận giải Vàng Media Agency of the Year tại TikTok Ad Awards 2024.</p>
           </div>
         </div>
 
@@ -6817,10 +6787,7 @@ nav{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; CTO</span>
             <h4>Nguyễn Xuân Bảo</h4>
-            <div class="leader-titles">
-              <strong>CTO phần mềm INPRO.vn</strong>
-            </div>
-            <p class="leader-bio">Đồng hành trực tiếp cùng Đặng Thanh Định sau thời gian làm việc tại TOPICA; chuyển bài toán vận hành nhiều thương hiệu thành giải pháp công nghệ.</p>
+            <p class="leader-bio"><strong>CTO phần mềm INPRO.vn.</strong> Đồng hành trực tiếp cùng Đặng Thanh Định sau thời gian làm việc tại TOPICA; chuyển bài toán vận hành nhiều thương hiệu thành giải pháp công nghệ.</p>
           </div>
         </div>
 
@@ -6832,12 +6799,7 @@ nav{
           <div class="leader-info">
             <span class="leader-role">CO-FOUNDER &amp; COO</span>
             <h4>Đào Anh Quân</h4>
-            <div class="leader-titles">
-              <strong>COO phần mềm INPRO.vn</strong>
-              <strong>Kỹ sư CNTT</strong>
-              <strong>Kinh nghiệm AI &amp; Martech và triển khai Lark Suite</strong>
-            </div>
-            <p class="leader-bio">Học viên Thạc sĩ AI tại Đại học Bách khoa Hà Nội, triển khai giải pháp cho doanh nghiệp TMĐT.</p>
+            <p class="leader-bio"><strong>COO phần mềm INPRO.vn, Kỹ sư CNTT, Kinh nghiệm AI &amp; Martech và triển khai Lark Suite.</strong> Học viên Thạc sĩ AI tại Đại học Bách khoa Hà Nội, triển khai giải pháp cho doanh nghiệp TMĐT.</p>
           </div>
         </div>
       </div>
